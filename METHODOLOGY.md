@@ -1,51 +1,40 @@
-# Research Methodology and Physical Validation Protocols
+# Universal Research Methodology and Discovery Protocols
 
-This document defines the formal engineering principles, hypothesis structures, virtual experimentation protocols, and validation rules governing all work in this repository.
+This document defines the formal scientific principles, simulation standards, hypothesis structures, and validation rules governing all work in the AI Edison discovery repository.
 
-## 1. The AI Edison Paradigm: High-Throughput In Silico Discovery
+## 1. The Universal In Silico Discovery Standard
 
-Traditional scientific discovery relied on manual physical iteration. An inventor proposed a single hypothesis, manufactured a physical sample, measured it manually, and repeated this process hundreds or thousands of times.
+Historically, an inventor proposed a single hypothesis, manually synthesized a material or fabricated a device, and tested it serially. This trial-and-error loop is replaced by automated computational search across 10,000+ virtual trials:
 
-The AI Edison methodology transforms this linear trial-and-error cycle into a computational search process:
+1. **Broad Domain Agnosticism:** The AI Edison framework applies to any inventive problem that can be simulated: novel materials, chemical catalysts, alternative thermodynamic cycles, kinetic mechanisms, or computing substrates.
+2. **First-Principles Constraints:** Every simulation is strictly bound by fundamental physical laws:
+   * Mass and Energy Conservation ($\sum \dot{E}_{in} = \sum \dot{E}_{out} + \frac{dE_{sys}}{dt}$)
+   * Momentum Conservation ($\sum \mathbf{F} = \frac{d\mathbf{p}}{dt}$)
+   * The Second Law of Thermodynamics ($\Delta S_{universe} \ge 0$)
+   * Quantum and continuum governing equations (Schrodinger, Navier-Stokes, Maxwell, Fourier, Arrhenius kinetics)
+3. **High-Throughput In Silico Testing (10,000+ Runs):** Rather than building a physical prototype that takes weeks and costs capital, the virtual model is stressed across 10,000+ variations in composition, geometry, boundary loads, and ambient temperatures.
+4. **Falsification Velocity:** 99.9 percent of candidates will fail or exhibit unphysical numerical artifacts. The engine identifies and discards non-viable variants automatically in seconds.
+5. **Physical / Real-World Transfer:** Only candidates that achieve verified theoretical stability, superior performance metrics over current state of the art, and realistic synthesis or fabrication viability graduate to physical production.
 
-1. **Virtual Space Exploration:** Rather than building 1,000 physical prototypes, parameterize the design space and execute 10,000+ automated virtual simulations across geometry, material properties, and environmental conditions.
-2. **First-Principles Constraints:** Every simulation is strictly bound by fundamental physical equations (Navier-Stokes, Maxwell equations, thermodynamic laws, continuum elastodynamics). Virtual experiments that display non-physical anomalies (e.g. numerical divergence or artificial energy creation) are flagged and corrected.
-3. **High-Throughput Falsification:** 99 percent of ideas will fail. The virtual engine filters out non-viable designs in seconds, identifying the rare Pareto-optimal physical geometries and mechanisms worth physical manufacturing.
-4. **Physical Transfer:** Only designs that achieve verified numerical stability, thermodynamic efficiency, and fabrication feasibility in simulation graduate to benchtop physical prototypes.
+## 2. Hypothesis Formulation Standard
 
-## 2. First-Principles Decomposition
+Every proposed invention must be formalized using the template in [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md) before executing virtual sweeps.
 
-When addressing an engineering challenge, break the system down to physical invariants:
+A valid hypothesis must define:
+* **Mechanism:** What specific physical, chemical, or informational principle produces the effect?
+* **Governing Model:** What mathematical or computational equations describe the system?
+* **Falsification Threshold:** What quantified metric determines that the candidate is ineffective or non-viable?
+* **State of the Art Baseline:** What is the gold-standard legacy benchmark, and what is its quantified performance?
 
-1. **State the Conservation Laws:**
-   * Conservation of Mass-Energy ($\sum \dot{E}_{in} = \sum \dot{E}_{out} + \frac{dE_{sys}}{dt}$)
-   * Conservation of Linear and Angular Momentum ($\sum \mathbf{F} = \frac{d\mathbf{p}}{dt}$)
-   * Entropy Production ($\Delta S_{universe} \ge 0$)
-2. **Isolate Intrinsic vs. Extrinsic Limitations:**
-   * *Intrinsic limitations* are dictated by nature (e.g., speed of light in medium, Carnot efficiency, Landauer limit).
-   * *Extrinsic limitations* are artifacts of current fabrication or legacy design choices (e.g., bearing friction, copper winding resistance, silicon gate oxide leakage).
-3. **Target Extrinsic Bottlenecks with Novel Physics:**
-   * Seek alternatives in neglected physical phenomena (e.g., elastocaloric effects, streaming potentials, topological acoustic metamaterials, magneto-rheological coupling).
+## 3. Benchmarking Against the State of the Art
 
-## 3. Hypothesis Formulation Standard
+Never evaluate an invention in isolation. Every measurement must compare directly against existing solutions:
+* **Materials and Chemistry:** Yield strength, thermal stability, ionic conductivity, catalytic turnover frequency, and synthesis complexity compared to commercial benchmarks.
+* **Energy Systems:** Specific energy (Wh/kg), power density (W/kg), and thermodynamic round-trip efficiency ($\eta$) compared to current lithium-ion, combustion, or fuel-cell technology.
+* **Mechanical Systems:** Force density, power-to-weight ratio, wear lifecycle, and friction coefficient compared to brushless electric motors and hydraulic actuators.
+* **Computing and Information:** Operations per joule (energy efficiency), latency, silicon area, or material footprint compared to CMOS silicon baselines.
 
-Every proposed hardware mechanism must be formalized using the template in [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md) before any fabrication or simulation begins.
-
-A valid hypothesis must answer:
-* **Mechanism:** What specific physical property or field interaction produces the effect?
-* **Governing Equation:** What mathematical model describes the phenomenon?
-* **Falsification Threshold:** What measurable threshold determines that the mechanism is ineffective or non-viable?
-* **Comparison Baseline:** What is the gold-standard conventional hardware mechanism, and what is its quantified efficiency or performance?
-
-## 4. Benchmarking Against the State of the Art
-
-Never evaluate an invention in isolation. Every measurement must compare directly against existing electromechanical counterparts:
-* **Specific Energy (Wh/kg or J/kg):** Compared against lithium-ion, ultracapacitors, and compressed pneumatic storage.
-* **Power Density (W/kg or W/m3):** Compared against standard brushless DC motors and hydraulic actuators.
-* **Specific Force / Torque Density (N/kg or Nm/kg):** Compared against electromagnetic gearmotors and shape memory alloys.
-* **Thermodynamic Efficiency ($\eta$):** Measured as output useful work divided by total input energy, accounting for ambient losses.
-
-## 5. Integrity and Falsification Rules
+## 4. Integrity and Scientific Rigor
 
 * Negative results are documented with the exact same rigor as successful outcomes.
-* If an experiment violates established laws (e.g. over-unity energy, reactionless propulsion), the primary assumption must always be instrumentation error, calibration drift, or unmeasured boundary leakage until validated independently.
+* If a virtual simulation displays anomalous performance (e.g. apparent over-unity energy, infinite conductivity, or frictionless motion), the primary assumption must always be numerical divergence, mesh instability, or boundary leakage until independently proven otherwise.
