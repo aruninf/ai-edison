@@ -71,7 +71,7 @@ First-principles evaluation rubric: [first-principles-evaluation.md](file:///Use
 ## 5. Repository Layout
 
 ```text
-inf-research/
+ai-edison/
 ├── README.md                               (Project overview and AI Edison mission)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
 ├── directions/                             (Core discovery domain dossiers)
