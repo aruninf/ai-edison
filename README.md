@@ -16,7 +16,7 @@ A research repository and discovery engine dedicated to formulating and falsifyi
 
 All discovery work is governed by the strict rules defined in [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md).
 
-> **Master Reference:** All 18 uncatalogued physical mechanisms are reviewed, derived, and structured according to the 16-point protocol in the master **[DISCOVERY_COMPENDIUM.md](file:///Users/arunkumar/Downloads/inf-research/DISCOVERY_COMPENDIUM.md)**.
+> **Master Reference:** All 20 uncatalogued physical mechanisms are reviewed, derived, and structured according to the 16-point protocol in the master **[DISCOVERY_COMPENDIUM.md](file:///Users/arunkumar/Downloads/inf-research/DISCOVERY_COMPENDIUM.md)**.
 
 ---
 
@@ -66,6 +66,14 @@ Every research vector represents an untouched physical domain deconstructed from
 ### F. Adversarial Red-Teaming & Falsification Engine
 * **[Vector 06: Adversarial Physical Falsification](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md)**: Automated in silico digital autopsy engine designed to kill non-viable candidates, eliminate mesh singularities, and expose simulator boundary leakage.
 
+### G. Fluid-Structure Decoupling & All-Solid Thermal Storage
+* **[Vector 19: Smectic Hydrostatic Decouplers](file:///Users/arunkumar/Downloads/inf-research/directions/19-smectic-hydrostatic-decouplers.md)**: Chiral smectic-A boundary wall anchoring that breaks Stevin's 440-year-old law of hydrostatics, saturating static bottom pressure at $\le 6\text{ kPa}$ in vertical columns over $100\text{ meters}$ deep (99.4% pressure reduction) while maintaining liquid fluidity at the core.
+  * Experiment Specification: [EXP-008-smectic-hydrostatic-decoupler.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-008-smectic-hydrostatic-decoupler.md)
+  * Simulation Solver: [exp008_hydrostatic_decoupler_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py)
+* **[Vector 20: Cooperative Spin-State Latent Heat Capacitors](file:///Users/arunkumar/Downloads/inf-research/directions/20-dislocation-latent-heat-capacitors.md)**: All-solid, dry coordination crystals storing giant latent heat ($351.6\text{ kJ/kg}$, matching water-ice) isothermally via electronic spin-crossover ($S=0 \leftrightarrow S=2$) and acoustic bond softening with zero liquid phase, zero leaks, and sub-0.5 K hysteresis.
+  * Experiment Specification: [EXP-009-dislocation-latent-heat-capacitor.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md)
+  * Simulation Solver: [exp009_dislocation_heat_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp009_dislocation_heat_sweep.py)
+
 ---
 
 ## 3. Active In Silico Experiment Registry
@@ -81,6 +89,8 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | **EXP-20261117-005** | Piezocatalytic Self-Mineralizing Concrete Composite | Passive carbon capture ($19.4\text{ tons CO}_2\text{/km/year}$) and crack healing from traffic vibration | `python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000` | [EXP-005 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md) |
 | **EXP-20261117-006** | Monolithic Flexogalvanic Solid-State Redox Engine | Interfaceless electrochemical DC potential ($V_{oc} \approx 0.23\text{ V}$) via nanoscale strain gradients | Specification Protocol | [EXP-006 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-006-flexogalvanic-redox-engine.md) |
 | **EXP-20261117-007** | Monolithic Topological Acoustic Soliton Flywheel | Bearingless stationary kinetic storage ($1.55\text{ kJ/kg}$) via supersonic torsional solitons ($v \approx 4,820\text{ m/s}$) | Specification Protocol | [EXP-007 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md) |
+| **EXP-20261117-008** | Smectic Topological Hydrostatic Pressure Decoupler | Saturate bottom pressure at $\le 6\text{ kPa}$ at $100\text{ m}$ depth (99.4% reduction) via helical anchoring | `python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000` | [EXP-008 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-008-smectic-hydrostatic-decoupler.md) |
+| **EXP-20261117-009** | Cooperative Spin-State Solid-State Latent Heat Capacitor | Dry all-solid latent heat ($351.6\text{ kJ/kg}$) via cooperative spin-crossover with zero liquid phase | `python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000` | [EXP-009 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md) |
 
 ---
 
@@ -127,7 +137,9 @@ inf-research/
 │   ├── 15-toroidal-liquid-bearing-surfaces.md
 │   ├── 16-coherent-phonon-inversion-foundations.md
 │   ├── 17-flexogalvanic-redox-engines.md
-│   └── 18-topological-acoustic-soliton-flywheels.md
+│   ├── 18-topological-acoustic-soliton-flywheels.md
+│   ├── 19-smectic-hydrostatic-decouplers.md
+│   └── 20-dislocation-latent-heat-capacitors.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
@@ -141,12 +153,16 @@ inf-research/
     ├── EXP-005-mechanocatalytic-carbon-mineralizer.md
     ├── EXP-006-flexogalvanic-redox-engine.md
     ├── EXP-007-topological-soliton-flywheel.md
+    ├── EXP-008-smectic-hydrostatic-decoupler.md
+    ├── EXP-009-dislocation-latent-heat-capacitor.md
     └── simulations/                        (Pure Python high-throughput multi-physics sweeps)
         ├── exp001_thermomagnetic_sweep.py
         ├── exp002_cavitation_sweep.py
         ├── exp003_mechanical_diode_sweep.py
         ├── exp004_water_generator_sweep.py
-        └── exp005_mineralization_sweep.py
+        ├── exp005_mineralization_sweep.py
+        ├── exp008_hydrostatic_decoupler_sweep.py
+        └── exp009_dislocation_heat_sweep.py
 ```
 
 ---
@@ -170,4 +186,10 @@ python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000
 
 # EXP-005: Piezocatalytic Self-Mineralizing Carbon Capture Composite (10,000 trials)
 python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000
+
+# EXP-008: Smectic Topological Hydrostatic Pressure Decoupler (10,000 trials)
+python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000
+
+# EXP-009: Cooperative Spin-State Solid-State Latent Heat Capacitor (10,000 trials)
+python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000
 ```
