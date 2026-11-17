@@ -9,6 +9,7 @@ This directory stores all active, validated, and falsified experimental logs acr
 | ID | Title | Primary Vector | Status | Date Created | Last Result / Artifact |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Oscillator | Vector 01 & 06 | In-Simulation | 2026-11-17 | [EXP-001 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp001_thermomagnetic_sweep.py) |
+| **EXP-20261117-002** | Monolithic Nanoporous Evaporative Cavitation-Snap Oscillator (NECSO) | Vector 07 & 06 | Virtual-Validated | 2026-11-17 | [EXP-002 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp002_cavitation_sweep.py) |
 
 ---
 

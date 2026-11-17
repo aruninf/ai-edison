@@ -32,6 +32,11 @@ With high-performance computing, multi-physics solvers, and autonomous parameter
 | **Vector 04** | Dissipative Thermodynamic Logic | Logic inference powered by irreversible non-equilibrium entropy fluxes (Onsager reciprocal transport) without silicon gates | [04-dissipative-thermodynamic-logic.md](file:///Users/arunkumar/Downloads/inf-research/directions/04-dissipative-thermodynamic-logic.md) |
 | **Vector 05** | Monolithic Transduction Lattices | Zero-circuit functionally graded meta-crystals cascading ambient $\Delta T \to$ micro-hydraulics $\to$ snap-through $\to$ RF chirps | [05-monolithic-transduction-lattices.md](file:///Users/arunkumar/Downloads/inf-research/directions/05-monolithic-transduction-lattices.md) |
 | **Vector 06** | Adversarial Physical Falsification | Automated in silico red-teamer / digital autopsy engine exposing simulator exploits, singularities, and tolerance defects | [06-adversarial-physical-falsification.md](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md) |
+| **Vector 07** | Transpiration & Cavitation Metamaterials | Harnessing the -100 MPa atmospheric chemical potential via monolithic negative-pressure cavitation for zero-power kinetic/RF machines | [07-transpiration-cavitation-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/07-transpiration-cavitation-metamaterials.md) |
+| **Vector 08** | Abiotic Mass Migration Lattices | Self-balancing structural metamaterials where stress gradients induce solid-state atomic diffusion to reinforce load paths (abiotic Wolff's Law) | [08-abiotic-mass-migration-lattices.md](file:///Users/arunkumar/Downloads/inf-research/directions/08-abiotic-mass-migration-lattices.md) |
+| **Vector 09** | Momentum-to-Vorticity Metamaterials | Chiral phononic lattices that geometrically refract linear translational impact momentum into trapped internal acoustic vortex loops | [09-momentum-to-vorticity-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/09-momentum-to-vorticity-metamaterials.md) |
+| **Vector 10** | Topological Entropic Refrigeration | Solid-state, fluid-free cooling powered by the giant configurational entropy change ($\Delta S_{topo}$) of reversible macromolecular knot uncoiling | [10-topological-entropic-refrigeration.md](file:///Users/arunkumar/Downloads/inf-research/directions/10-topological-entropic-refrigeration.md) |
+| **Vector 11** | Non-Oscillatory Chrono-Metamaterials | Frequency-free absolute timekeeping recording elapsed physical time via monotonic spatial phase front progression without counters or power | [11-non-oscillatory-chrono-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/11-non-oscillatory-chrono-metamaterials.md) |
 
 ---
 
@@ -42,8 +47,9 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | Experiment ID | Title | Key Target | Reproduce Locally |
 | :--- | :--- | :--- | :--- |
 | **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Cantilever Oscillator | Harvest kinetic work from ambient drafts ($\Delta T \le 3\text{ K}$) using low-Curie Gadolinium/Heusler alloys | `python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py` |
+| **EXP-20261117-002** | Monolithic Nanoporous Evaporative Cavitation-Snap Oscillator (NECSO) | Autonomous kinetic power ($> 300\text{ W}$ peak) and RF chirps from ambient humidity ($\Delta \mu \approx -23\text{ MPa}$) | `python3 hypotheses/simulations/exp002_cavitation_sweep.py` |
 
-* Full experiment specification: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md)
+* Full experiment specifications: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md) and [EXP-002-evaporative-cavitation-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md)
 
 ---
 
@@ -85,7 +91,12 @@ ai-edison/
 │   ├── 03-integrated-physical-machines.md
 │   ├── 04-dissipative-thermodynamic-logic.md
 │   ├── 05-monolithic-transduction-lattices.md
-│   └── 06-adversarial-physical-falsification.md
+│   ├── 06-adversarial-physical-falsification.md
+│   ├── 07-transpiration-cavitation-metamaterials.md
+│   ├── 08-abiotic-mass-migration-lattices.md
+│   ├── 09-momentum-to-vorticity-metamaterials.md
+│   ├── 10-topological-entropic-refrigeration.md
+│   └── 11-non-oscillatory-chrono-metamaterials.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
@@ -93,17 +104,22 @@ ai-edison/
 └── hypotheses/                             (Virtual experiment runs and validation logs)
     ├── README.md                           (Active hypotheses registry)
     ├── EXP-001-thermomagnetic-oscillator.md
+    ├── EXP-002-evaporative-cavitation-oscillator.md
     └── simulations/
-        └── exp001_thermomagnetic_sweep.py  (10,000-trial in silico simulation solver)
+        ├── exp001_thermomagnetic_sweep.py  (10,000-trial in silico simulation solver)
+        └── exp002_cavitation_sweep.py      (10,000-trial in silico simulation solver)
 ```
 
 ---
 
 ## 6. How to Run Virtual Experiments
 
-Execute the automated parameter sweep out of the box (standard Python library, zero external dependencies required):
+Execute the automated parameter sweeps out of the box (standard Python library, zero external dependencies required):
 
 ```bash
-# Run 10,000 in silico trials for EXP-001
+# Run 10,000 in silico trials for EXP-001 (Thermomagnetic Oscillator)
 python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py 10000
+
+# Run 10,000 in silico trials for EXP-002 (Evaporative Cavitation Oscillator)
+python3 hypotheses/simulations/exp002_cavitation_sweep.py 10000
 ```
