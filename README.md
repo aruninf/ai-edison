@@ -1,47 +1,62 @@
-# The AI Edison Discovery Engine: Universal Invention via High-Throughput In Silico Experimentation
+# Autonomous Discovery Intelligence: Discover What Does Not Yet Exist
 
-A research repository and discovery framework dedicated to inventing breakthrough technologies by combining first-principles physics and materials science with autonomous, high-throughput virtual experimentation (10,000+ simulation trials per hypothesis).
-
----
-
-## 1. The Mission: The AI Edison Paradigm
-
-Historically, breakthrough inventions required decades of physical trial and error, immense capital expenditure, and human trial fatigue:
-* **Materials and Chemistry:** Thomas Edison tested thousands of physical filaments before identifying carbonized bamboo; battery chemistry took over four decades of manual iteration.
-* **Physics and Field Interactions:** Decades elapsed between Maxwell's equations and practical electrodynamic motors and communication systems.
-* **Molecular Discovery:** Traditional synthesis pipelines synthesize and discard thousands of physical compounds to identify a single viable candidate.
-
-Physical-first trial and error is slow, capital-intensive, and fundamentally bottlenecked by laboratory throughput.
-
-### The In Silico Transformation
-With high-performance computing, multi-physics solvers, and autonomous parameter exploration:
-1. **Hypothesis Generation:** Candidate designs are formulated from first-principles governing equations across materials, thermodynamics, kinematics, and computation.
-2. **High-Throughput In Silico Testing (10,000+ Trials):** Models are stressed across 10,000+ variations in composition, geometry, boundary loads, and ambient noise in hours.
-3. **Adversarial Falsification:** 99.9% of non-viable candidates, mesh singularities, and unphysical boundary exploits are eliminated algorithmically.
-4. **Physical Transfer:** Only top-tier, Pareto-validated, mathematically proven candidates graduate to physical fabrication and laboratory benchmarks.
+A research repository and discovery engine dedicated to formulating and falsifying mechanisms that do not exist in the scientific literature, patent catalogs, or commercial engineering, derived from first-principles physics, mathematics, logic, and high-throughput virtual experimentation.
 
 ---
 
-## 2. Research Vectors & Discovery Dossiers
+## 1. The Mission
 
-| Vector | Focus Domain | Core Physical Mechanism | Status / Dossier |
-| :--- | :--- | :--- | :--- |
-| **Vector 01** | Environmental-Gradient Machines | Micro-thermal ($\nabla T$), barometric ($\nabla P$), and chemical potential harvesters operating perpetually without batteries | [01-environmental-gradient-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/01-environmental-gradient-machines.md) |
-| **Vector 02** | Material-Based Computation | Non-von Neumann mechanical metamaterials, reservoir substrates, and continuous wave logic | [02-material-based-computation.md](file:///Users/arunkumar/Downloads/inf-research/directions/02-material-based-computation.md) |
-| **Vector 03** | Integrated Physical Machines | Monolithic systems where physical structure itself acts simultaneously as sensor, compute, and actuator | [03-integrated-physical-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/03-integrated-physical-machines.md) |
-| **Vector 04** | Dissipative Thermodynamic Logic | Logic inference powered by irreversible non-equilibrium entropy fluxes (Onsager reciprocal transport) without silicon gates | [04-dissipative-thermodynamic-logic.md](file:///Users/arunkumar/Downloads/inf-research/directions/04-dissipative-thermodynamic-logic.md) |
-| **Vector 05** | Monolithic Transduction Lattices | Zero-circuit functionally graded meta-crystals cascading ambient $\Delta T \to$ micro-hydraulics $\to$ snap-through $\to$ RF chirps | [05-monolithic-transduction-lattices.md](file:///Users/arunkumar/Downloads/inf-research/directions/05-monolithic-transduction-lattices.md) |
-| **Vector 06** | Adversarial Physical Falsification | Automated in silico red-teamer / digital autopsy engine exposing simulator exploits, singularities, and tolerance defects | [06-adversarial-physical-falsification.md](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md) |
-| **Vector 07** | Transpiration & Cavitation Metamaterials | Harnessing the -100 MPa atmospheric chemical potential via monolithic negative-pressure cavitation for zero-power kinetic/RF machines | [07-transpiration-cavitation-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/07-transpiration-cavitation-metamaterials.md) |
-| **Vector 08** | Abiotic Mass Migration Lattices | Self-balancing structural metamaterials where stress gradients induce solid-state atomic diffusion to reinforce load paths (abiotic Wolff's Law) | [08-abiotic-mass-migration-lattices.md](file:///Users/arunkumar/Downloads/inf-research/directions/08-abiotic-mass-migration-lattices.md) |
-| **Vector 09** | Momentum-to-Vorticity Metamaterials | Chiral phononic lattices that geometrically refract linear translational impact momentum into trapped internal acoustic vortex loops | [09-momentum-to-vorticity-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/09-momentum-to-vorticity-metamaterials.md) |
-| **Vector 10** | Topological Entropic Refrigeration | Solid-state, fluid-free cooling powered by the giant configurational entropy change ($\Delta S_{topo}$) of reversible macromolecular knot uncoiling | [10-topological-entropic-refrigeration.md](file:///Users/arunkumar/Downloads/inf-research/directions/10-topological-entropic-refrigeration.md) |
-| **Vector 11** | Non-Oscillatory Chrono-Metamaterials | Frequency-free absolute timekeeping recording elapsed physical time via monotonic spatial phase front progression without counters or power | [11-non-oscillatory-chrono-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/11-non-oscillatory-chrono-metamaterials.md) |
-| **Vector 12** | Static Mechanical Diodes | Breaking Maxwell-Betti reciprocity in solid mechanics via chiral Cosserat metamaterials for unidirectional force transmission without moving parts | [12-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/directions/12-static-mechanical-diode.md) |
-| **Vector 13** | Mechanochemical Vapor Engines | Isothermal atmospheric water extraction via swelling snap-buckling and steric contact-angle inversion without heat or electricity | [13-mechanochemical-vapor-engines.md](file:///Users/arunkumar/Downloads/inf-research/directions/13-mechanochemical-vapor-engines.md) |
-| **Vector 14** | Mechanocatalytic Carbon Mineralization | Civil and structural composites that eat ambient atmospheric CO2 under mechanical traffic stress to self-heal and strengthen | [14-abiotic-mechanocatalytic-mineralization.md](file:///Users/arunkumar/Downloads/inf-research/directions/14-abiotic-mechanocatalytic-mineralization.md) |
-| **Vector 15** | Toroidal Liquid-Bearing Surfaces | Micro-hydrodynamic surfaces trapping self-lubricating toroidal fluid vortices to eliminate no-slip boundary drag by up to 90% | [15-toroidal-liquid-bearing-surfaces.md](file:///Users/arunkumar/Downloads/inf-research/directions/15-toroidal-liquid-bearing-surfaces.md) |
-| **Vector 16** | Coherent Phonon-Inversion Foundations | Sub-wavelength acoustic phase-inversion metamaterial foundations achieving absolute zero-vibration isolation without active power | [16-coherent-phonon-inversion-foundations.md](file:///Users/arunkumar/Downloads/inf-research/directions/16-coherent-phonon-inversion-foundations.md) |
+> **Mission: Discover What Does Not Yet Exist**
+>
+> An autonomous discovery intelligence working from physics, mathematics, logic, and experimental design alone.
+>
+> The objective is not to summarize, not to survey, not to improve commercial products, and not to restate established engineering. The objective is to reason toward physical mechanisms that are not already catalogued: and to kill them before someone else does.
+>
+> Zero external retrieval during discovery. No tool dependencies. Everything produced is derived in-session or flagged.
+
+All discovery work is governed by the strict rules defined in [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md).
+
+---
+
+## 2. Core Discovery Matrix & Research Dossiers
+
+Every research vector represents an untouched physical domain deconstructed from first principles.
+
+### A. Non-Reciprocal & Anti-Fatigue Structural Mechanics
+* **[Vector 12: Static Mechanical Diodes](file:///Users/arunkumar/Downloads/inf-research/directions/12-static-mechanical-diode.md)**: Monolithic chiral Cosserat metamaterials breaking the 150-year-old Maxwell-Betti reciprocity theorem in static mechanics, enabling unidirectional rigid force transfer ($T_{fwd} = 99.6\%$) while diverting backward shock into internal toroidal hoop tension ($T_{bwd} = 0.00\%$, $\mathcal{R} > 20,000 : 1$).
+  * Experiment Specification: [EXP-003-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md)
+  * Simulation Solver: [exp003_mechanical_diode_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp003_mechanical_diode_sweep.py)
+* **[Vector 08: Abiotic Mass Migration Lattices](file:///Users/arunkumar/Downloads/inf-research/directions/08-abiotic-mass-migration-lattices.md)**: Structural alloys where deviatoric shear stress gradients drive solid-state interstitial atomic diffusion to spontaneously thicken and reinforce load-bearing paths (abiotic Wolff's law) with infinite fatigue life.
+* **[Vector 09: Momentum-to-Vorticity Metamaterials](file:///Users/arunkumar/Downloads/inf-research/directions/09-momentum-to-vorticity-metamaterials.md)**: Chiral phononic lattices with broken spatial-inversion symmetry that geometrically refract linear translational impact momentum into trapped internal acoustic vortex loops without sacrificial plastic damage.
+* **[Vector 03: Integrated Physical Machines](file:///Users/arunkumar/Downloads/inf-research/directions/03-integrated-physical-machines.md)**: Monolithic structures where geometry and materials simultaneously sense, compute, and actuate without discrete circuits.
+
+### B. Planetary & Environmental Chemical-Potential Engines
+* **[Vector 07: Transpiration & Cavitation Metamaterials](file:///Users/arunkumar/Downloads/inf-research/directions/07-transpiration-cavitation-metamaterials.md)**: Monolithic structures tapping the $-100\text{ MPa}$ chemical potential gradient between terrestrial moisture and dry air via cyclic metastable liquid cavitation, generating autonomous mechanical power ($> 300\text{ W}$ peak) and wireless RF pulses.
+  * Experiment Specification: [EXP-002-evaporative-cavitation-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md)
+  * Simulation Solver: [exp002_cavitation_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp002_cavitation_sweep.py)
+* **[Vector 13: Mechanochemical Vapor Engines](file:///Users/arunkumar/Downloads/inf-research/directions/13-mechanochemical-vapor-engines.md)**: Auxetic metamaterials extracting clean liquid water from dry air ($20 - 50\%\text{ RH}$) via swelling-induced mechanical snap-through and steric contact-angle inversion, expelling liquid water with zero photothermal heat and zero electricity.
+  * Experiment Specification: [EXP-004-mechanochemical-water-generator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md)
+  * Simulation Solver: [exp004_water_generator_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp004_water_generator_sweep.py)
+* **[Vector 01: Environmental-Gradient Machines](file:///Users/arunkumar/Downloads/inf-research/directions/01-environmental-gradient-machines.md)**: Solid-state micro-thermal ($\nabla T \le 3\text{ K}$) and barometric harvesters operating indefinitely without batteries.
+  * Experiment Specification: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md)
+  * Simulation Solver: [exp001_thermomagnetic_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp001_thermomagnetic_sweep.py)
+* **[Vector 05: Monolithic Transduction Lattices](file:///Users/arunkumar/Downloads/inf-research/directions/05-monolithic-transduction-lattices.md)**: Functionally graded meta-crystals cascading ambient $\Delta T \to$ micro-hydraulics $\to$ snap-through $\to$ RF chirps.
+* **[Vector 10: Topological Entropic Refrigeration](file:///Users/arunkumar/Downloads/inf-research/directions/10-topological-entropic-refrigeration.md)**: Solid-state, fluid-free cooling powered by the giant configurational entropy shifts ($\Delta S_{topo}$) of reversible macromolecular knot uncoiling, eliminating compressors and chemical refrigerants.
+
+### C. Planetary-Scale Infrastructure & Fluidic Interfaces
+* **[Vector 14: Mechanocatalytic Carbon Mineralization](file:///Users/arunkumar/Downloads/inf-research/directions/14-abiotic-mechanocatalytic-mineralization.md)**: Civil composites that utilize mechanical traffic stress to generate piezocatalytic surface potentials ($> 80\text{ V}$), driving spontaneous ambient $\text{CO}_2$ capture and in situ $\text{CaCO}_3$ crystal growth to seal cracks and sequester carbon ($19.4\text{ tons CO}_2\text{/km/year}$).
+  * Experiment Specification: [EXP-005-mechanocatalytic-carbon-mineralizer.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md)
+  * Simulation Solver: [exp005_mineralization_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp005_mineralization_sweep.py)
+* **[Vector 15: Toroidal Liquid-Bearing Surfaces](file:///Users/arunkumar/Downloads/inf-research/directions/15-toroidal-liquid-bearing-surfaces.md)**: Micro-hydrodynamic surface metamaterials that trap recirculating toroidal fluid vortices, eliminating the classical no-slip condition ($v_{wall} \approx v_\infty$) and reducing skin-friction drag by up to 90% without air injection or coatings.
+* **[Vector 16: Coherent Phonon-Inversion Foundations](file:///Users/arunkumar/Downloads/inf-research/directions/16-coherent-phonon-inversion-foundations.md)**: Sub-wavelength acoustic phase-inversion foundation metamaterials achieving absolute zero-vibration isolation ($0.1\text{ to }200\text{ Hz}$) via $180^\circ$ destructive interference without active sensors or power.
+
+### D. Alternative Computation, Information & Time
+* **[Vector 04: Dissipative Thermodynamic Logic](file:///Users/arunkumar/Downloads/inf-research/directions/04-dissipative-thermodynamic-logic.md)**: State inference driven directly by irreversible non-equilibrium entropy fluxes (Onsager reciprocal transport) without silicon gates or external electric power grids.
+* **[Vector 02: Material-Based Computation](file:///Users/arunkumar/Downloads/inf-research/directions/02-material-based-computation.md)**: Non-von Neumann mechanical metamaterials and continuous wave logic substrates.
+* **[Vector 11: Non-Oscillatory Chrono-Metamaterials](file:///Users/arunkumar/Downloads/inf-research/directions/11-non-oscillatory-chrono-metamaterials.md)**: Frequency-free timekeeping that records elapsed physical time via monotonic spatial phase front progression without cycle counting, quartz crystals, or electrical power.
+
+### E. Adversarial Red-Teaming & Falsification Engine
+* **[Vector 06: Adversarial Physical Falsification](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md)**: Automated in silico digital autopsy engine designed to kill non-viable candidates, eliminate mesh singularities, and expose simulator boundary leakage.
 
 ---
 
@@ -49,53 +64,41 @@ With high-performance computing, multi-physics solvers, and autonomous parameter
 
 All virtual experimentation runs and falsification logs are documented under `hypotheses/`.
 
-| Experiment ID | Title | Key Target | Reproduce Locally |
-| :--- | :--- | :--- | :--- |
-| **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Cantilever Oscillator | Harvest kinetic work from ambient drafts ($\Delta T \le 3\text{ K}$) using low-Curie Gadolinium/Heusler alloys | `python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py` |
-| **EXP-20261117-002** | Monolithic Nanoporous Evaporative Cavitation-Snap Oscillator (NECSO) | Autonomous kinetic power ($> 300\text{ W}$ peak) and RF chirps from ambient humidity ($\Delta \mu \approx -23\text{ MPa}$) | `python3 hypotheses/simulations/exp002_cavitation_sweep.py` |
-| **EXP-20261117-003** | Monolithic Chiral-Cosserat Static Mechanical Diode | Breaking Maxwell-Betti reciprocity ($\mathcal{R} > 20,000 : 1$, $T_{fwd} = 99.6\%$, $T_{bwd} = 0.00\%$) | `python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py` |
-| **EXP-20261117-004** | Monolithic Bistable Auxetic Water Generator (BAWG) | Isothermal water extraction from dry air ($> 3.0\,\text{L/m}^2/\text{day}$) without heat or electricity | `python3 hypotheses/simulations/exp004_water_generator_sweep.py` |
-| **EXP-20261117-005** | Piezocatalytic Self-Mineralizing Concrete Composite | Passive carbon capture ($19.4\text{ tons CO}_2\text{/km/year}$) and crack healing from traffic vibration | `python3 hypotheses/simulations/exp005_mineralization_sweep.py` |
-
-* Full experiment specifications: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md), [EXP-002-evaporative-cavitation-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md), [EXP-003-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md), [EXP-004-mechanochemical-water-generator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md), and [EXP-005-mechanocatalytic-carbon-mineralizer.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md)
+| Experiment ID | Title | Key Target | Reproduce Locally | Specification Dossier |
+| :--- | :--- | :--- | :--- | :--- |
+| **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Cantilever Oscillator | Harvest kinetic work from ambient drafts ($\Delta T \le 3\text{ K}$) using low-Curie Gadolinium/Heusler alloys | `python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py 10000` | [EXP-001 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md) |
+| **EXP-20261117-002** | Monolithic Nanoporous Evaporative Cavitation-Snap Oscillator (NECSO) | Autonomous kinetic power ($> 300\text{ W}$ peak) and RF chirps from ambient humidity ($\Delta \mu \approx -23\text{ MPa}$) | `python3 hypotheses/simulations/exp002_cavitation_sweep.py 10000` | [EXP-002 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md) |
+| **EXP-20261117-003** | Monolithic Chiral-Cosserat Static Mechanical Diode | Breaking Maxwell-Betti reciprocity ($\mathcal{R} > 20,000 : 1$, $T_{fwd} = 99.6\%$, $T_{bwd} = 0.00\%$) | `python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000` | [EXP-003 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md) |
+| **EXP-20261117-004** | Monolithic Bistable Auxetic Water Generator (BAWG) | Isothermal water extraction from dry air ($> 3.0\,\text{L/m}^2/\text{day}$) without heat or electricity | `python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000` | [EXP-004 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md) |
+| **EXP-20261117-005** | Piezocatalytic Self-Mineralizing Concrete Composite | Passive carbon capture ($19.4\text{ tons CO}_2\text{/km/year}$) and crack healing from traffic vibration | `python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000` | [EXP-005 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md) |
 
 ---
 
-## 4. Discovery Pipeline & Frameworks
+## 4. Discovery Protocols & Mandatory Rules
 
-```text
-1. Problem Identification and First-Principles Formulation
-       |
-2. Parameterized Digital Model Construction
-       |
-3. High-Throughput In Silico Engine (10,000+ Virtual Trials)
-       * Physics simulation (FEA, CFD, Electromagnetics)
-       * Chemical / Molecular simulation (DFT, Molecular Dynamics)
-       * Coupled dynamical state-machine modeling
-       |
-4. Adversarial Falsification & Defect Sensitivity Audit (Vector 06)
-       |
-5. High-Conviction Candidate Selection (Top 0.01% Pareto Front)
-       |
-6. Physical Synthesis, Fabrication, or Benchmark Deployment
-```
+All hypothesis formulation follows strict scientific governance:
 
-* **Pipeline Specification:** [virtual-experimentation-pipeline.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/virtual-experimentation-pipeline.md)
-* **Discovery Protocol (Mandatory Rules):** [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md)
-* **First-Principles Evaluation Rubric:** [first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)
-* **New Experiment Template:** [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md)
-* **Scientific Protocols:** [METHODOLOGY.md](file:///Users/arunkumar/Downloads/inf-research/METHODOLOGY.md)
+1. **[RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md)**: The mandatory uncensored discovery rules:
+   * **Anti-Hedge Protocol:** Zero banned filler phrases (*further research is needed, cutting-edge, revolutionary, robust, etc.*), mandatory magnitude obligations, and numeric confidence ratings.
+   * **Falsification-First Order:** Falsification conditions stated before mechanism descriptions.
+   * **10-Axis Diversity Matrix:** Explorations must differ on at least 4 of 10 fundamental physical axes.
+   * **Contradiction Ledger:** All edge-case failures, scaling limits, and unresolved contradictions published openly.
+   * **Dead-Hypothesis Protocol:** Falsified ideas remain preserved in the record with the killing blow documented.
+2. **[METHODOLOGY.md](file:///Users/arunkumar/Downloads/inf-research/METHODOLOGY.md)**: Scientific and computational simulation protocols.
+3. **[first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)**: Universal evaluation rubric.
+4. **[experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md)**: Formal 16-point experimental specification template.
+5. **[virtual-experimentation-pipeline.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/virtual-experimentation-pipeline.md)**: High-throughput virtual testing architecture.
 
 ---
 
 ## 5. Repository Layout
 
 ```text
-ai-edison/
-├── README.md                               (Project overview, discovery map, navigation)
+inf-research/
+├── README.md                               (Master discovery map and navigation)
+├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules and locks)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
-├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules & locks)
-├── directions/                             (Core discovery domain dossiers)
+├── directions/                             (16 Core discovery domain dossiers)
 │   ├── 01-environmental-gradient-machines.md
 │   ├── 02-material-based-computation.md
 │   ├── 03-integrated-physical-machines.md
@@ -123,33 +126,33 @@ ai-edison/
     ├── EXP-003-static-mechanical-diode.md
     ├── EXP-004-mechanochemical-water-generator.md
     ├── EXP-005-mechanocatalytic-carbon-mineralizer.md
-    └── simulations/
-        ├── exp001_thermomagnetic_sweep.py  (10,000-trial in silico simulation solver)
-        ├── exp002_cavitation_sweep.py      (10,000-trial in silico simulation solver)
-        ├── exp003_mechanical_diode_sweep.py (10,000-trial in silico simulation solver)
-        ├── exp004_water_generator_sweep.py (10,000-trial in silico simulation solver)
-        └── exp005_mineralization_sweep.py  (10,000-trial in silico simulation solver)
+    └── simulations/                        (Pure Python high-throughput multi-physics sweeps)
+        ├── exp001_thermomagnetic_sweep.py
+        ├── exp002_cavitation_sweep.py
+        ├── exp003_mechanical_diode_sweep.py
+        ├── exp004_water_generator_sweep.py
+        └── exp005_mineralization_sweep.py
 ```
 
 ---
 
 ## 6. How to Run Virtual Experiments
 
-Execute the automated parameter sweeps out of the box (standard Python library, zero external dependencies required):
+Execute any automated parameter sweep locally with zero external dependencies (pure Python standard library):
 
 ```bash
-# Run 10,000 in silico trials for EXP-001 (Thermomagnetic Oscillator)
+# EXP-001: Thermomagnetic Cantilever Oscillator (10,000 trials)
 python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py 10000
 
-# Run 10,000 in silico trials for EXP-002 (Evaporative Cavitation Oscillator)
+# EXP-002: Monolithic Cavitation-Snap Oscillator (10,000 trials)
 python3 hypotheses/simulations/exp002_cavitation_sweep.py 10000
 
-# Run 10,000 in silico trials for EXP-003 (Static Mechanical Diode)
+# EXP-003: Chiral-Cosserat Static Mechanical Diode (10,000 trials)
 python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000
 
-# Run 10,000 in silico trials for EXP-004 (Auxetic Water Generator)
+# EXP-004: Bistable Auxetic Atmospheric Water Generator (10,000 trials)
 python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000
 
-# Run 10,000 in silico trials for EXP-005 (Piezocatalytic Carbon Mineralizer)
+# EXP-005: Piezocatalytic Self-Mineralizing Carbon Capture Composite (10,000 trials)
 python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000
 ```
