@@ -13,6 +13,8 @@ This directory stores all active, validated, and falsified experimental logs acr
 | **EXP-20261117-003** | Monolithic Chiral-Cosserat Static Mechanical Diode | Vector 12 & 06 | Virtual-Validated | 2026-11-17 | [EXP-003 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp003_mechanical_diode_sweep.py) |
 | **EXP-20261117-004** | Monolithic Bistable Auxetic Water Generator (BAWG) | Vector 13 & 06 | Virtual-Validated | 2026-11-17 | [EXP-004 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp004_water_generator_sweep.py) |
 | **EXP-20261117-005** | Piezocatalytic Self-Mineralizing Concrete Composite | Vector 14 & 06 | Virtual-Validated | 2026-11-17 | [EXP-005 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp005_mineralization_sweep.py) |
+| **EXP-20261117-006** | Monolithic Flexogalvanic Solid-State Redox Engine | Vector 17 & 06 | Proposed | 2026-11-17 | [EXP-006 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-006-flexogalvanic-redox-engine.md) |
+| **EXP-20261117-007** | Monolithic Topological Acoustic Soliton Flywheel | Vector 18 & 06 | Proposed | 2026-11-17 | [EXP-007 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md) |
 
 ---
 

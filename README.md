@@ -16,6 +16,8 @@ A research repository and discovery engine dedicated to formulating and falsifyi
 
 All discovery work is governed by the strict rules defined in [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md).
 
+> **Master Reference:** All 18 uncatalogued physical mechanisms are reviewed, derived, and structured according to the 16-point protocol in the master **[DISCOVERY_COMPENDIUM.md](file:///Users/arunkumar/Downloads/inf-research/DISCOVERY_COMPENDIUM.md)**.
+
 ---
 
 ## 2. Core Discovery Matrix & Research Dossiers
@@ -42,6 +44,8 @@ Every research vector represents an untouched physical domain deconstructed from
   * Simulation Solver: [exp001_thermomagnetic_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp001_thermomagnetic_sweep.py)
 * **[Vector 05: Monolithic Transduction Lattices](file:///Users/arunkumar/Downloads/inf-research/directions/05-monolithic-transduction-lattices.md)**: Functionally graded meta-crystals cascading ambient $\Delta T \to$ micro-hydraulics $\to$ snap-through $\to$ RF chirps.
 * **[Vector 10: Topological Entropic Refrigeration](file:///Users/arunkumar/Downloads/inf-research/directions/10-topological-entropic-refrigeration.md)**: Solid-state, fluid-free cooling powered by the giant configurational entropy shifts ($\Delta S_{topo}$) of reversible macromolecular knot uncoiling, eliminating compressors and chemical refrigerants.
+* **[Vector 17: Monolithic Flexogalvanic Redox Engines](file:///Users/arunkumar/Downloads/inf-research/directions/17-flexogalvanic-redox-engines.md)**: Mixed ionic-electronic ceramic nano-wedges where permanent elastic strain gradients ($\nabla \boldsymbol{\epsilon} \ge 10^5\text{ m}^{-1}$) drive directional oxygen vacancy drift to sustain steady-state electrochemical redox power in ambient air without electrolyte membranes or catalysts.
+  * Experiment Specification: [EXP-006-flexogalvanic-redox-engine.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-006-flexogalvanic-redox-engine.md)
 
 ### C. Planetary-Scale Infrastructure & Fluidic Interfaces
 * **[Vector 14: Mechanocatalytic Carbon Mineralization](file:///Users/arunkumar/Downloads/inf-research/directions/14-abiotic-mechanocatalytic-mineralization.md)**: Civil composites that utilize mechanical traffic stress to generate piezocatalytic surface potentials ($> 80\text{ V}$), driving spontaneous ambient $\text{CO}_2$ capture and in situ $\text{CaCO}_3$ crystal growth to seal cracks and sequester carbon ($19.4\text{ tons CO}_2\text{/km/year}$).
@@ -55,7 +59,11 @@ Every research vector represents an untouched physical domain deconstructed from
 * **[Vector 02: Material-Based Computation](file:///Users/arunkumar/Downloads/inf-research/directions/02-material-based-computation.md)**: Non-von Neumann mechanical metamaterials and continuous wave logic substrates.
 * **[Vector 11: Non-Oscillatory Chrono-Metamaterials](file:///Users/arunkumar/Downloads/inf-research/directions/11-non-oscillatory-chrono-metamaterials.md)**: Frequency-free timekeeping that records elapsed physical time via monotonic spatial phase front progression without cycle counting, quartz crystals, or electrical power.
 
-### E. Adversarial Red-Teaming & Falsification Engine
+### E. Non-Linear Kinetic & Topological Energy Storage
+* **[Vector 18: Topological Acoustic Soliton Flywheels](file:///Users/arunkumar/Downloads/inf-research/directions/18-topological-acoustic-soliton-flywheels.md)**: Storing macroscopic kinetic energy ($1.55\text{ kJ/kg}$) within physically stationary, non-rotating solid-state silicon crystals via continuously circulating non-linear torsional kink solitons ($v \approx 4,820\text{ m/s}$), eliminating bearings, rotational drag, and centrifugal fragmentation.
+  * Experiment Specification: [EXP-007-topological-soliton-flywheel.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md)
+
+### F. Adversarial Red-Teaming & Falsification Engine
 * **[Vector 06: Adversarial Physical Falsification](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md)**: Automated in silico digital autopsy engine designed to kill non-viable candidates, eliminate mesh singularities, and expose simulator boundary leakage.
 
 ---
@@ -71,6 +79,8 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | **EXP-20261117-003** | Monolithic Chiral-Cosserat Static Mechanical Diode | Breaking Maxwell-Betti reciprocity ($\mathcal{R} > 20,000 : 1$, $T_{fwd} = 99.6\%$, $T_{bwd} = 0.00\%$) | `python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000` | [EXP-003 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md) |
 | **EXP-20261117-004** | Monolithic Bistable Auxetic Water Generator (BAWG) | Isothermal water extraction from dry air ($> 3.0\,\text{L/m}^2/\text{day}$) without heat or electricity | `python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000` | [EXP-004 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md) |
 | **EXP-20261117-005** | Piezocatalytic Self-Mineralizing Concrete Composite | Passive carbon capture ($19.4\text{ tons CO}_2\text{/km/year}$) and crack healing from traffic vibration | `python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000` | [EXP-005 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md) |
+| **EXP-20261117-006** | Monolithic Flexogalvanic Solid-State Redox Engine | Interfaceless electrochemical DC potential ($V_{oc} \approx 0.23\text{ V}$) via nanoscale strain gradients | Specification Protocol | [EXP-006 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-006-flexogalvanic-redox-engine.md) |
+| **EXP-20261117-007** | Monolithic Topological Acoustic Soliton Flywheel | Bearingless stationary kinetic storage ($1.55\text{ kJ/kg}$) via supersonic torsional solitons ($v \approx 4,820\text{ m/s}$) | Specification Protocol | [EXP-007 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md) |
 
 ---
 
@@ -96,9 +106,10 @@ All hypothesis formulation follows strict scientific governance:
 ```text
 inf-research/
 ├── README.md                               (Master discovery map and navigation)
+├── DISCOVERY_COMPENDIUM.md                 (Comprehensive 16-point review of all 18 mechanisms)
 ├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules and locks)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
-├── directions/                             (16 Core discovery domain dossiers)
+├── directions/                             (18 Core discovery domain dossiers)
 │   ├── 01-environmental-gradient-machines.md
 │   ├── 02-material-based-computation.md
 │   ├── 03-integrated-physical-machines.md
@@ -114,7 +125,9 @@ inf-research/
 │   ├── 13-mechanochemical-vapor-engines.md
 │   ├── 14-abiotic-mechanocatalytic-mineralization.md
 │   ├── 15-toroidal-liquid-bearing-surfaces.md
-│   └── 16-coherent-phonon-inversion-foundations.md
+│   ├── 16-coherent-phonon-inversion-foundations.md
+│   ├── 17-flexogalvanic-redox-engines.md
+│   └── 18-topological-acoustic-soliton-flywheels.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
@@ -126,6 +139,8 @@ inf-research/
     ├── EXP-003-static-mechanical-diode.md
     ├── EXP-004-mechanochemical-water-generator.md
     ├── EXP-005-mechanocatalytic-carbon-mineralizer.md
+    ├── EXP-006-flexogalvanic-redox-engine.md
+    ├── EXP-007-topological-soliton-flywheel.md
     └── simulations/                        (Pure Python high-throughput multi-physics sweeps)
         ├── exp001_thermomagnetic_sweep.py
         ├── exp002_cavitation_sweep.py
