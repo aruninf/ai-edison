@@ -81,6 +81,7 @@ All virtual experimentation runs and falsification logs are documented under `hy
 ```
 
 * **Pipeline Specification:** [virtual-experimentation-pipeline.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/virtual-experimentation-pipeline.md)
+* **Discovery Protocol (Mandatory Rules):** [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md)
 * **First-Principles Evaluation Rubric:** [first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)
 * **New Experiment Template:** [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md)
 * **Scientific Protocols:** [METHODOLOGY.md](file:///Users/arunkumar/Downloads/inf-research/METHODOLOGY.md)
@@ -93,6 +94,7 @@ All virtual experimentation runs and falsification logs are documented under `hy
 ai-edison/
 ├── README.md                               (Project overview, discovery map, navigation)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
+├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules & locks)
 ├── directions/                             (Core discovery domain dossiers)
 │   ├── 01-environmental-gradient-machines.md
 │   ├── 02-material-based-computation.md

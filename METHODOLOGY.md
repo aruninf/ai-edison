@@ -38,3 +38,14 @@ Never evaluate an invention in isolation. Every measurement must compare directl
 
 * Negative results are documented with the exact same rigor as successful outcomes.
 * If a virtual simulation displays anomalous performance (e.g. apparent over-unity energy, infinite conductivity, or frictionless motion), the primary assumption must always be numerical divergence, mesh instability, or boundary leakage until independently proven otherwise.
+
+## 5. Uncensored Discovery Protocol
+
+All new hypothesis generation and first-principles reasoning must strictly follow the hardened rules defined in [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md). 
+
+Key mandatory directives:
+* **Anti-Hedge Protocol:** Zero banned phrases (*promising, cutting-edge, revolutionary, robust, etc.*), mandatory magnitude obligations, and numeric confidence ratings.
+* **Falsification-First Order:** Falsification conditions must precede mechanism description.
+* **10-Axis Diversity Matrix:** Explorations must differ on at least 4 of 10 fundamental physical axes.
+* **Explicit Contradiction Ledger:** All contradictions, edge-case failures, and unresolved limitations must be logged and published.
+* **Dead-Hypothesis Carcass Retention:** Falsified ideas remain in the record as negative discoveries.
