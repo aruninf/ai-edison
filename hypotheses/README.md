@@ -1,14 +1,19 @@
 # Hypotheses and Experiment Registry
 
-This directory stores all active, validated, and falsified experimental logs.
+This directory stores all active, validated, and falsified experimental logs across the AI Edison engine.
+
+---
 
 ## Active Hypotheses Table
 
-| ID | Title | Vector | Status | Date Created | Last Result |
+| ID | Title | Primary Vector | Status | Date Created | Last Result / Artifact |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| *None active yet* | Initial exploratory phase | All | Planning | 2026-11-13 | Repository established |
+| **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Oscillator | Vector 01 & 06 | In-Simulation | 2026-11-17 | [EXP-001 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp001_thermomagnetic_sweep.py) |
+
+---
 
 ## Guidelines for Filing
 1. Copy the structure from [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md).
-2. Name the file according to its hypothesis ID (e.g. `EXP-20261113-001-thermomagnetic-oscillator.md`).
-3. Commit all raw measurement scripts, CAD schematics, and sensor logs into the corresponding experiment folder or subfolder.
+2. Name the file according to its hypothesis ID (e.g. `EXP-YYYYMMDD-00X-<descriptor>.md`).
+3. Place all simulation scripts, CAD models, or sensor logs into `hypotheses/simulations/` or a dedicated experiment subdirectory.
+4. Execute at least 10,000 parameter variations in simulation before advancing a candidate to physical fabrication or laboratory testing.

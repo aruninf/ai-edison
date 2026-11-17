@@ -1,52 +1,53 @@
 # The AI Edison Discovery Engine: Universal Invention via High-Throughput In Silico Experimentation
 
-A research repository and discovery framework dedicated to inventing new technologies across all domains by combining first-principles modeling with autonomous, high-throughput virtual experimentation (10,000+ trials per hypothesis).
+A research repository and discovery framework dedicated to inventing breakthrough technologies by combining first-principles physics and materials science with autonomous, high-throughput virtual experimentation (10,000+ simulation trials per hypothesis).
+
+---
 
 ## 1. The Mission: The AI Edison Paradigm
 
-Historically, breakthrough inventions across every discipline required decades of agonizing trial and error, capital destruction, and human toil:
-* **Materials and Chemistry:** Thomas Edison famously tested thousands of candidate materials before finding carbonized bamboo for the incandescent lamp; modern battery chemistry took over four decades of manual chemical formulation.
-* **Physics and Field Interactions:** Decades elapsed between the fundamental mathematical equations of electromagnetism and their translation into practical motors, dynamos, and communication systems.
-* **Pharmaceuticals and Molecules:** Traditional molecular discovery requires synthesizing and discarding thousands of physical compounds to find a single viable candidate.
+Historically, breakthrough inventions required decades of physical trial and error, immense capital expenditure, and human trial fatigue:
+* **Materials and Chemistry:** Thomas Edison tested thousands of physical filaments before identifying carbonized bamboo; battery chemistry took over four decades of manual iteration.
+* **Physics and Field Interactions:** Decades elapsed between Maxwell's equations and practical electrodynamic motors and communication systems.
+* **Molecular Discovery:** Traditional synthesis pipelines synthesize and discard thousands of physical compounds to identify a single viable candidate.
 
-Physical-first trial and error is slow, capital-intensive, and inherently bottlenecked by human bandwidth.
+Physical-first trial and error is slow, capital-intensive, and fundamentally bottlenecked by laboratory throughput.
 
-### The Paradigm Shift: Universal Virtual Invention
-We are no longer restricted to physical trial and error or narrow hardware limitations. With artificial intelligence paired with high-fidelity digital models and simulation engines:
-* An AI model can formulate hypotheses across any technological domain: materials science, energy systems, physical mechanisms, chemical compounds, and computational architectures.
-* The system can execute **10,000+ virtual experiments** on a specific challenge in hours or days, testing parameter boundaries, stability, kinetics, and field interactions.
-* Failed experiments cost zero physical resources, zero laboratory downtime, and zero human risk.
+### The In Silico Transformation
+With high-performance computing, multi-physics solvers, and autonomous parameter exploration:
+1. **Hypothesis Generation:** Candidate designs are formulated from first-principles governing equations across materials, thermodynamics, kinematics, and computation.
+2. **High-Throughput In Silico Testing (10,000+ Trials):** Models are stressed across 10,000+ variations in composition, geometry, boundary loads, and ambient noise in hours.
+3. **Adversarial Falsification:** 99.9% of non-viable candidates, mesh singularities, and unphysical boundary exploits are eliminated algorithmically.
+4. **Physical Transfer:** Only top-tier, Pareto-validated, mathematically proven candidates graduate to physical fabrication and laboratory benchmarks.
 
-**The Ultimate Objective:** Build an autonomous "AI Edison" capable of discovering and validating any class of invention in the virtual world, transferring only mathematically proven, high-conviction breakthroughs into the physical world.
+---
 
-## 2. Universal Invention Domains
+## 2. Research Vectors & Discovery Dossiers
 
-The AI Edison engine operates across multiple scientific and technological frontiers:
+| Vector | Focus Domain | Core Physical Mechanism | Status / Dossier |
+| :--- | :--- | :--- | :--- |
+| **Vector 01** | Environmental-Gradient Machines | Micro-thermal ($\nabla T$), barometric ($\nabla P$), and chemical potential harvesters operating perpetually without batteries | [01-environmental-gradient-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/01-environmental-gradient-machines.md) |
+| **Vector 02** | Material-Based Computation | Non-von Neumann mechanical metamaterials, reservoir substrates, and continuous wave logic | [02-material-based-computation.md](file:///Users/arunkumar/Downloads/inf-research/directions/02-material-based-computation.md) |
+| **Vector 03** | Integrated Physical Machines | Monolithic systems where physical structure itself acts simultaneously as sensor, compute, and actuator | [03-integrated-physical-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/03-integrated-physical-machines.md) |
+| **Vector 04** | Dissipative Thermodynamic Logic | Logic inference powered by irreversible non-equilibrium entropy fluxes (Onsager reciprocal transport) without silicon gates | [04-dissipative-thermodynamic-logic.md](file:///Users/arunkumar/Downloads/inf-research/directions/04-dissipative-thermodynamic-logic.md) |
+| **Vector 05** | Monolithic Transduction Lattices | Zero-circuit functionally graded meta-crystals cascading ambient $\Delta T \to$ micro-hydraulics $\to$ snap-through $\to$ RF chirps | [05-monolithic-transduction-lattices.md](file:///Users/arunkumar/Downloads/inf-research/directions/05-monolithic-transduction-lattices.md) |
+| **Vector 06** | Adversarial Physical Falsification | Automated in silico red-teamer / digital autopsy engine exposing simulator exploits, singularities, and tolerance defects | [06-adversarial-physical-falsification.md](file:///Users/arunkumar/Downloads/inf-research/directions/06-adversarial-physical-falsification.md) |
 
-### Domain 1: Materials and Molecular Synthesis
-Designing novel alloys, crystalline lattices, polymers, catalysts, solid electrolytes, and room-temperature functional materials using molecular dynamics, density functional theory (DFT), and generative crystal structure models.
+---
 
-### Domain 2: Energy Generation, Storage, and Conversion
-Inventing alternative thermodynamic cycles, passive environmental-gradient harvesters, solid-state cooling mechanisms, high-density electrochemical systems, and field-coupled power transmission.
-* Reference: [01-environmental-gradient-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/01-environmental-gradient-machines.md)
+## 3. Active In Silico Experiment Registry
 
-### Domain 3: Physical Mechanisms and Actuation
-Discovering non-traditional kinematics, fluidic propulsion, surface-tension engines, metamaterial actuators, and structures that move without conventional rotary shafts or friction-heavy gearboxes.
-* Reference: [03-integrated-physical-machines.md](file:///Users/arunkumar/Downloads/inf-research/directions/03-integrated-physical-machines.md)
+All virtual experimentation runs and falsification logs are documented under `hypotheses/`.
 
-### Domain 4: Computational and Information Substrates
-Developing non-von Neumann computing systems, mechanical logic, analog wave computing, reservoir networks, and continuous-state material computation that eliminate electronic semiconductor switching bottlenecks.
-* Reference: [02-material-based-computation.md](file:///Users/arunkumar/Downloads/inf-research/directions/02-material-based-computation.md)
+| Experiment ID | Title | Key Target | Reproduce Locally |
+| :--- | :--- | :--- | :--- |
+| **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Cantilever Oscillator | Harvest kinetic work from ambient drafts ($\Delta T \le 3\text{ K}$) using low-Curie Gadolinium/Heusler alloys | `python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py` |
 
-## 3. Hard Rejection Criteria
+* Full experiment specification: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md)
 
-To maintain scientific integrity and focus on real breakthroughs:
-* No repackaging of existing products under novel nomenclature.
-* No incremental software wrappers around legacy systems.
-* No speculative concepts that violate fundamental conservation laws (energy, momentum, mass, thermodynamics) without verifiable mathematical justification.
-* No ideas evaluated on intuition alone: every candidate must be subjected to 10,000+ virtual stress-test iterations.
+---
 
-## 4. The Virtual-to-Real Discovery Pipeline
+## 4. Discovery Pipeline & Frameworks
 
 ```text
 1. Problem Identification and First-Principles Formulation
@@ -56,32 +57,53 @@ To maintain scientific integrity and focus on real breakthroughs:
 3. High-Throughput In Silico Engine (10,000+ Virtual Trials)
        * Physics simulation (FEA, CFD, Electromagnetics)
        * Chemical / Molecular simulation (DFT, Molecular Dynamics)
-       * Dynamical systems and differential equation modeling
+       * Coupled dynamical state-machine modeling
        |
-4. Automated Algorithmic Falsification and Pareto Ranking
+4. Adversarial Falsification & Defect Sensitivity Audit (Vector 06)
        |
-5. High-Conviction Candidate Selection (Top 0.01%)
+5. High-Conviction Candidate Selection (Top 0.01% Pareto Front)
        |
 6. Physical Synthesis, Fabrication, or Benchmark Deployment
 ```
 
-Detailed pipeline specification: [virtual-experimentation-pipeline.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/virtual-experimentation-pipeline.md)
-First-principles evaluation rubric: [first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)
+* **Pipeline Specification:** [virtual-experimentation-pipeline.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/virtual-experimentation-pipeline.md)
+* **First-Principles Evaluation Rubric:** [first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)
+* **New Experiment Template:** [experiment-template.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/experiment-template.md)
+* **Scientific Protocols:** [METHODOLOGY.md](file:///Users/arunkumar/Downloads/inf-research/METHODOLOGY.md)
+
+---
 
 ## 5. Repository Layout
 
 ```text
 ai-edison/
-├── README.md                               (Project overview and AI Edison mission)
+├── README.md                               (Project overview, discovery map, navigation)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
 ├── directions/                             (Core discovery domain dossiers)
 │   ├── 01-environmental-gradient-machines.md
 │   ├── 02-material-based-computation.md
-│   └── 03-integrated-physical-machines.md
+│   ├── 03-integrated-physical-machines.md
+│   ├── 04-dissipative-thermodynamic-logic.md
+│   ├── 05-monolithic-transduction-lattices.md
+│   └── 06-adversarial-physical-falsification.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
 │   └── experiment-template.md
 └── hypotheses/                             (Virtual experiment runs and validation logs)
-    └── README.md
+    ├── README.md                           (Active hypotheses registry)
+    ├── EXP-001-thermomagnetic-oscillator.md
+    └── simulations/
+        └── exp001_thermomagnetic_sweep.py  (10,000-trial in silico simulation solver)
+```
+
+---
+
+## 6. How to Run Virtual Experiments
+
+Execute the automated parameter sweep out of the box (standard Python library, zero external dependencies required):
+
+```bash
+# Run 10,000 in silico trials for EXP-001
+python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py 10000
 ```
