@@ -38,6 +38,7 @@ With high-performance computing, multi-physics solvers, and autonomous parameter
 | **Vector 10** | Topological Entropic Refrigeration | Solid-state, fluid-free cooling powered by the giant configurational entropy change ($\Delta S_{topo}$) of reversible macromolecular knot uncoiling | [10-topological-entropic-refrigeration.md](file:///Users/arunkumar/Downloads/inf-research/directions/10-topological-entropic-refrigeration.md) |
 | **Vector 11** | Non-Oscillatory Chrono-Metamaterials | Frequency-free absolute timekeeping recording elapsed physical time via monotonic spatial phase front progression without counters or power | [11-non-oscillatory-chrono-metamaterials.md](file:///Users/arunkumar/Downloads/inf-research/directions/11-non-oscillatory-chrono-metamaterials.md) |
 | **Vector 12** | Static Mechanical Diodes | Breaking Maxwell-Betti reciprocity in solid mechanics via chiral Cosserat metamaterials for unidirectional force transmission without moving parts | [12-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/directions/12-static-mechanical-diode.md) |
+| **Vector 13** | Mechanochemical Vapor Engines | Isothermal atmospheric water extraction via swelling snap-buckling and steric contact-angle inversion without heat or electricity | [13-mechanochemical-vapor-engines.md](file:///Users/arunkumar/Downloads/inf-research/directions/13-mechanochemical-vapor-engines.md) |
 
 ---
 
@@ -50,8 +51,9 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | **EXP-20261117-001** | Room-Temperature Solid-State Thermomagnetic Cantilever Oscillator | Harvest kinetic work from ambient drafts ($\Delta T \le 3\text{ K}$) using low-Curie Gadolinium/Heusler alloys | `python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py` |
 | **EXP-20261117-002** | Monolithic Nanoporous Evaporative Cavitation-Snap Oscillator (NECSO) | Autonomous kinetic power ($> 300\text{ W}$ peak) and RF chirps from ambient humidity ($\Delta \mu \approx -23\text{ MPa}$) | `python3 hypotheses/simulations/exp002_cavitation_sweep.py` |
 | **EXP-20261117-003** | Monolithic Chiral-Cosserat Static Mechanical Diode | Breaking Maxwell-Betti reciprocity ($\mathcal{R} > 20,000 : 1$, $T_{fwd} = 99.6\%$, $T_{bwd} = 0.00\%$) | `python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py` |
+| **EXP-20261117-004** | Monolithic Bistable Auxetic Water Generator (BAWG) | Isothermal water extraction from dry air ($> 3.0\,\text{L/m}^2/\text{day}$) without heat or electricity | `python3 hypotheses/simulations/exp004_water_generator_sweep.py` |
 
-* Full experiment specifications: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md), [EXP-002-evaporative-cavitation-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md), and [EXP-003-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md)
+* Full experiment specifications: [EXP-001-thermomagnetic-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-001-thermomagnetic-oscillator.md), [EXP-002-evaporative-cavitation-oscillator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-002-evaporative-cavitation-oscillator.md), [EXP-003-static-mechanical-diode.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-003-static-mechanical-diode.md), and [EXP-004-mechanochemical-water-generator.md](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-004-mechanochemical-water-generator.md)
 
 ---
 
@@ -99,7 +101,8 @@ ai-edison/
 │   ├── 09-momentum-to-vorticity-metamaterials.md
 │   ├── 10-topological-entropic-refrigeration.md
 │   ├── 11-non-oscillatory-chrono-metamaterials.md
-│   └── 12-static-mechanical-diode.md
+│   ├── 12-static-mechanical-diode.md
+│   └── 13-mechanochemical-vapor-engines.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
@@ -109,10 +112,12 @@ ai-edison/
     ├── EXP-001-thermomagnetic-oscillator.md
     ├── EXP-002-evaporative-cavitation-oscillator.md
     ├── EXP-003-static-mechanical-diode.md
+    ├── EXP-004-mechanochemical-water-generator.md
     └── simulations/
         ├── exp001_thermomagnetic_sweep.py  (10,000-trial in silico simulation solver)
         ├── exp002_cavitation_sweep.py      (10,000-trial in silico simulation solver)
-        └── exp003_mechanical_diode_sweep.py (10,000-trial in silico simulation solver)
+        ├── exp003_mechanical_diode_sweep.py (10,000-trial in silico simulation solver)
+        └── exp004_water_generator_sweep.py (10,000-trial in silico simulation solver)
 ```
 
 ---
@@ -130,4 +135,7 @@ python3 hypotheses/simulations/exp002_cavitation_sweep.py 10000
 
 # Run 10,000 in silico trials for EXP-003 (Static Mechanical Diode)
 python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000
+
+# Run 10,000 in silico trials for EXP-004 (Auxetic Water Generator)
+python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000
 ```
