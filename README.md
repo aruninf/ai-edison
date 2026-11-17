@@ -1,5 +1,10 @@
 # Autonomous Discovery Intelligence: Discover What Does Not Yet Exist
 
+[![In Silico Sweeps](https://github.com/aruninf/ai-edison/actions/workflows/verify_sweeps.yml/badge.svg)](https://github.com/aruninf/ai-edison/actions/workflows/verify_sweeps.yml)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aruninf/ai-edison/blob/main/notebooks/run_all_sweeps.ipynb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.placeholder.svg)](https://zenodo.org/)
+
 A research repository and discovery engine dedicated to formulating and falsifying mechanisms that do not exist in the scientific literature, patent catalogs, or commercial engineering, derived from first-principles physics, mathematics, logic, and high-throughput virtual experimentation.
 
 ---
@@ -17,6 +22,8 @@ A research repository and discovery engine dedicated to formulating and falsifyi
 All discovery work is governed by the strict rules defined in [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md).
 
 > **Master Reference:** All 20 uncatalogued physical mechanisms are reviewed, derived, and structured according to the 16-point protocol in the master **[DISCOVERY_COMPENDIUM.md](file:///Users/arunkumar/Downloads/inf-research/DISCOVERY_COMPENDIUM.md)**.
+>
+> **Dissemination Kit:** Ready-to-deploy publication templates, Show HN copy, and academic preprints are available in **[DISSEMINATION_KIT.md](file:///Users/arunkumar/Downloads/inf-research/DISSEMINATION_KIT.md)**.
 
 ---
 
@@ -116,10 +123,13 @@ All hypothesis formulation follows strict scientific governance:
 ```text
 inf-research/
 ├── README.md                               (Master discovery map and navigation)
-├── DISCOVERY_COMPENDIUM.md                 (Comprehensive 16-point review of all 18 mechanisms)
+├── DISCOVERY_COMPENDIUM.md                 (Comprehensive 16-point review of all 20 mechanisms)
+├── DISSEMINATION_KIT.md                    (Turnkey publication copy, Show HN, and LaTeX preprints)
+├── CITATION.cff                            (Machine-readable academic citation metadata)
+├── .zenodo.json                            (CERN Zenodo DOI minting configuration)
 ├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules and locks)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
-├── directions/                             (18 Core discovery domain dossiers)
+├── directions/                             (20 Core discovery domain dossiers)
 │   ├── 01-environmental-gradient-machines.md
 │   ├── 02-material-based-computation.md
 │   ├── 03-integrated-physical-machines.md
@@ -144,6 +154,8 @@ inf-research/
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
 │   └── experiment-template.md
+├── notebooks/                              (Interactive zero-install browser runs)
+│   └── run_all_sweeps.ipynb
 └── hypotheses/                             (Virtual experiment runs and validation logs)
     ├── README.md                           (Active hypotheses registry)
     ├── EXP-001-thermomagnetic-oscillator.md
@@ -193,3 +205,25 @@ python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000
 # EXP-009: Cooperative Spin-State Solid-State Latent Heat Capacitor (10,000 trials)
 python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000
 ```
+
+---
+
+## 7. Interactive Browser Execution & Academic Citation
+
+### Run in Google Colab (Zero Local Setup)
+You can execute all 10,000-trial sweeps directly in your browser without local Python installation:
+* [Launch Interactive Notebook](https://colab.research.google.com/github/aruninf/ai-edison/blob/main/notebooks/run_all_sweeps.ipynb)
+
+### How to Cite
+If you utilize these derivations, physical mechanisms, or simulation models in academic research or technical whitepapers, please cite using [CITATION.cff](file:///Users/arunkumar/Downloads/inf-research/CITATION.cff) or the format below:
+
+```bibtex
+@software{kumar2026discovery,
+  author = {Kumar, Arun},
+  title = {Autonomous Discovery Intelligence: 20 Uncatalogued Physical Inventions and In Silico Multi-Physics Sweeps},
+  url = {https://github.com/aruninf/ai-edison},
+  year = {2026},
+  publisher = {GitHub}
+}
+```
+

@@ -1,0 +1,44 @@
+name: Multi-Physics In Silico Sweep Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-simulations:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Run EXP-001 Thermomagnetic Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp001_thermomagnetic_sweep.py 10000
+
+    - name: Run EXP-002 Cavitation Snap Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp002_cavitation_sweep.py 10000
+
+    - name: Run EXP-003 Mechanical Diode Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000
+
+    - name: Run EXP-004 Auxetic Water Generator Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp004_water_generator_sweep.py 10000
+
+    - name: Run EXP-005 Concrete Carbon Mineralizer Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp005_mineralization_sweep.py 10000
+
+    - name: Run EXP-008 Smectic Hydrostatic Decoupler Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000
+
+    - name: Run EXP-009 Cooperative Spin-State Latent Heat Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000
