@@ -58,10 +58,22 @@ This repository is engineered as an operational **Discovery Skill** (`SKILL.md`)
 ### Operational Skill Files
 
 * Master Skill Definition: [SKILL.md](file:///Users/arunkumar/Downloads/inf-research/SKILL.md)
+* Installation & Setup Guide: [INSTALLATION.md](file:///Users/arunkumar/Downloads/inf-research/docs/INSTALLATION.md)
 * Antigravity / Agent Skill: [.agents/skills/first-principles-discovery/SKILL.md](file:///Users/arunkumar/Downloads/inf-research/.agents/skills/first-principles-discovery/SKILL.md)
 * Hardened Discovery Protocol: [RESEARCH_PROTOCOL.md](file:///Users/arunkumar/Downloads/inf-research/RESEARCH_PROTOCOL.md)
 * Scientific & Computational Methodology: [METHODOLOGY.md](file:///Users/arunkumar/Downloads/inf-research/METHODOLOGY.md)
 * Evaluation Rubric: [first-principles-evaluation.md](file:///Users/arunkumar/Downloads/inf-research/frameworks/first-principles-evaluation.md)
+
+### Quick Install (One-Liner)
+
+Install globally for Google Antigravity / Gemini CLI (`agy`):
+
+```bash
+mkdir -p ~/.gemini/skills/first-principles-discovery
+curl -sSL https://raw.githubusercontent.com/aruninf/ai-edison/main/SKILL.md -o ~/.gemini/skills/first-principles-discovery/SKILL.md
+```
+
+For Claude Code, Cursor, Windsurf, or VS Code setups, read the step-by-step [Installation Guide](file:///Users/arunkumar/Downloads/inf-research/docs/INSTALLATION.md).
 
 ### Step-by-Step Discovery Workflow
 
