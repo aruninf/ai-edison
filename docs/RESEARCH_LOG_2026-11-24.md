@@ -105,4 +105,6 @@ The one number worth carrying forward is the Carnot identity in vector 58: $W/Q 
 | **72** | Bilateral microwave phase-symmetry stroke triage | Complex phase separation: ischemic $\Delta \phi \le -8.2^\circ$ vs hemorrhagic $\Delta \phi \ge +12.5^\circ$ ($180^\circ$ quadrant separation) | Shipped |
 | **73** | Donnan-gated dual-atom electrocatalytic wearable kidney | $E_{\mathrm{anode}} = +0.24\ \mathrm{V}$ ($810\ \mathrm{mV}$ below $Cl_2$ evolution) + $>10^5$ Donnan exclusion; $25\ \mathrm{g/day}$ urea at $1.6\ \mathrm{W}$ | Shipped |
 | **74** | Resonant interfacial shear-decoupling of microcalcifications | Modulus ratio $95,000 : 1 \to \tau_{\mathrm{interface}} = 2.56\ \mathrm{MPa} > 1.80\ \mathrm{MPa}$ bond rupture at $\varepsilon = 0.08\%$ tissue strain | Shipped |
+| **75** | Repulsive vacuum-Casimir topological bearing | $P_{\text{Casimir}} = +47.1\ \mathrm{kPa}$ at $d = 20\ \mathrm{nm}$ via axion $\theta$-term; passive zero-power levitation to $10^6\ \mathrm{RPM}$ | Shipped |
+| **76** | Chiral phononic flat-band thermal super-insulator | $k_{\text{eff}} = 0.00062\ \mathrm{W/(m\cdot K)}$ ($42\times$ below air) via $v_g \le 4.2\ \mathrm{m/s}$ and $d_{\text{cage}} \ll \lambda_{\text{air}}$ ($\mathrm{Kn} \approx 142$) | Shipped |
 
