@@ -94,3 +94,15 @@ Vector 58 passes on the second test because the capability is nanopore fabricati
 Ten candidates, one written, two deferred, three dead, four rejected as catalogue or existing process. That ratio is the same as the 2026-11-19 session (three survivors from eight) once the near-field valve is counted as superseded rather than written.
 
 The one number worth carrying forward is the Carnot identity in vector 58: $W/Q = \Delta T/T$ exactly. Any thermo-osmotic claim that reports a head without reporting the heat, or a heat without the head, is reporting a free parameter that does not exist.
+
+---
+
+## Session Update: Vectors 71 to 74 Shipped
+
+| Vector | Focus / Mechanism | Deciding Number | Status |
+| --- | --- | --- | --- |
+| **71** | Whispering-gallery Rayleigh-mode lithotripsy | $10.0\ \mathrm{MPa}$ tensile hoop stress at $0.5\ \mathrm{MPa}$ incident drive ($Q \approx 20$, $4.4\times$ below tissue cavitation threshold) | Shipped |
+| **72** | Bilateral microwave phase-symmetry stroke triage | Complex phase separation: ischemic $\Delta \phi \le -8.2^\circ$ vs hemorrhagic $\Delta \phi \ge +12.5^\circ$ ($180^\circ$ quadrant separation) | Shipped |
+| **73** | Donnan-gated dual-atom electrocatalytic wearable kidney | $E_{\mathrm{anode}} = +0.24\ \mathrm{V}$ ($810\ \mathrm{mV}$ below $Cl_2$ evolution) + $>10^5$ Donnan exclusion; $25\ \mathrm{g/day}$ urea at $1.6\ \mathrm{W}$ | Shipped |
+| **74** | Resonant interfacial shear-decoupling of microcalcifications | Modulus ratio $95,000 : 1 \to \tau_{\mathrm{interface}} = 2.56\ \mathrm{MPa} > 1.80\ \mathrm{MPa}$ bond rupture at $\varepsilon = 0.08\%$ tissue strain | Shipped |
+
