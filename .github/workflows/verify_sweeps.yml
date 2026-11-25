@@ -49,3 +49,6 @@ jobs:
 
     - name: Run EXP-010 Thermo-Acoustic Vapor-Jet CHF Sweep (10,000 trials)
       run: python3 hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py
+
+    - name: Run EXP-011 Acoustic-Mechanical Impedance Transformer Sweep (10,000 trials)
+      run: python3 hypotheses/simulations/exp011_acoustic_impedance_transformer_sweep.py

@@ -1,6 +1,6 @@
-# Master Vector Catalog (Vectors 01 to 77)
+# Master Vector Catalog (Vectors 01 to 78)
 
-This directory contains all 77 first-principles discovery vectors across 73 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
+This directory contains all 78 first-principles discovery vectors across 74 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
 
 ---
 
@@ -18,7 +18,7 @@ This directory contains all 77 first-principles discovery vectors across 73 doss
 
 ---
 
-## Complete Categorized Index (All 77 Vectors)
+## Complete Categorized Index (All 78 Vectors)
 
 ### I. Methodology, Computation & Adversarial Frameworks (Vectors 02, 03, 04, 05, 06, 11)
 | # | Title | Core Principle / Target | Status | Dossier |
@@ -30,7 +30,7 @@ This directory contains all 77 first-principles discovery vectors across 73 doss
 | 06 | Adversarial Physical Falsification | Six-point in silico red-team protocol for killing weak hypotheses | Protocol | [06-adversarial-physical-falsification.md](./06-adversarial-physical-falsification.md) |
 | 11 | Non-Oscillatory Absolute Chrono-Metamaterials | Timekeeping via irreversible phase-front propagation without oscillators | Foundational | [11-non-oscillatory-chrono-metamaterials.md](./11-non-oscillatory-chrono-metamaterials.md) |
 
-### II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75)
+### II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75, 78)
 | # | Title | Core Principle / Target | Status | Dossier |
 | :--- | :--- | :--- | :--- | :--- |
 | 08 | Abiotic Solid-State Mass Migration Lattices | Stress-gradient-driven interstitial diffusion reinforcing high-strain zones | Live | [08-abiotic-mass-migration-lattices.md](./08-abiotic-mass-migration-lattices.md) |
@@ -45,6 +45,7 @@ This directory contains all 77 first-principles discovery vectors across 73 doss
 | 32 | Cryo-Expansion Snap-Ejection Metamaterial | Passive ice-shedding using phase-expansion bistable snap-through | Live (70%) | [32-cryo-expansion-snap-deicing.md](./32-cryo-expansion-snap-deicing.md) |
 | 37 | Stable Negative-Bulk-Modulus Metamaterial | Buckling-constrained lattice exhibiting stable negative compressibility | Live (70%) | [37-stable-negative-bulk-modulus.md](./37-stable-negative-bulk-modulus.md) |
 | 75 | Repulsive Vacuum-Casimir Topological Bearing | Axion magnetoelectric coupling generating $+47.1\ \mathrm{kPa}$ Casimir repulsion | Live (71%) | [75-repulsive-vacuum-casimir-topological-bearing.md](./75-repulsive-vacuum-casimir-topological-bearing.md) |
+| 78 | Sub-Wavelength Monolithic Acoustic-Mechanical Impedance Transformer | Area-lever transformer achieving $89.63\%$ mean water-air transmission ($2$ to $30\ \mathrm{kHz}$); EXP-011 | Virtual-Validated (75%) | [78-acoustic-mechanical-impedance-transformer.md](./78-acoustic-mechanical-impedance-transformer.md) |
 
 ### III. Thermal Physics, Phase-Change & Phononic Engineering (Vectors 10, 20, 21, 25, 28, 31, 40, 57, 58, 64, 76, 77)
 | # | Title | Core Principle / Target | Status | Dossier |

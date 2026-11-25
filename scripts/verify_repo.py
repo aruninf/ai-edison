@@ -78,8 +78,11 @@ def check_strict_dashes(errors: List[str]) -> None:
     strict_files = [
         ROOT / "directions" / "README.md",
         ROOT / "directions" / "77-thermo-acoustic-vapor-jet-chf-lattice.md",
+        ROOT / "directions" / "78-acoustic-mechanical-impedance-transformer.md",
         ROOT / "hypotheses" / "EXP-20261125-010-thermo-acoustic-chf-lattice.md",
+        ROOT / "hypotheses" / "EXP-20261125-011-acoustic-impedance-transformer.md",
         ROOT / "hypotheses" / "simulations" / "exp010_thermo_acoustic_chf_sweep.py",
+        ROOT / "hypotheses" / "simulations" / "exp011_acoustic_impedance_transformer_sweep.py",
         ROOT / "CONTRIBUTING.md",
     ]
     for p in strict_files:
