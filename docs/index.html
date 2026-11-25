@@ -3,34 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autonomous Discovery Intelligence: Uncatalogued Physical Inventions</title>
-  <meta name="description" content="Autonomous first-principles discovery intelligence formulating uncatalogued physical mechanisms, mathematical derivations, and 10,000-trial in silico validation sweeps.">
+  <title>AI Edison: Autonomous First-Principles Discovery Intelligence (77 Vectors)</title>
+  <meta name="description" content="Autonomous first-principles discovery intelligence formulating 77 uncatalogued physical mechanisms, mathematical derivations, and 80,000+ in silico validation trials.">
   <link rel="canonical" href="https://aruninf.github.io/ai-edison/">
   <style>
     :root {
       --bg-canvas: #08090d;
-      --bg-surface: #10121a;
-      --bg-surface-elevated: #161a26;
-      --bg-subtle: #1d2232;
+      --bg-surface: #10131c;
+      --bg-surface-elevated: #171c29;
+      --bg-subtle: #1e2436;
       --border-hairline: rgba(255, 255, 255, 0.09);
-      --border-focus: #3b82f6;
-      --text-primary: #f3f5fa;
-      --text-secondary: #9aa5bc;
-      --text-muted: #647087;
+      --border-strong: rgba(255, 255, 255, 0.18);
+      --border-focus: #60a5fa;
+      --text-primary: #f4f6fb;
+      --text-secondary: #a5b0c7;
+      --text-muted: #78849e;
       --accent-primary: #3b82f6;
       --accent-hover: #60a5fa;
       --accent-active: #2563eb;
-      --accent-surface: rgba(59, 130, 246, 0.08);
-      --accent-border: rgba(59, 130, 246, 0.3);
-      --danger-surface: rgba(239, 68, 68, 0.08);
-      --danger-border: rgba(239, 68, 68, 0.3);
-      --danger-text: #f87171;
-      --success-surface: rgba(16, 185, 129, 0.08);
-      --success-border: rgba(16, 185, 129, 0.3);
+      --accent-surface: rgba(59, 130, 246, 0.10);
+      --accent-border: rgba(59, 130, 246, 0.35);
+      --danger-surface: rgba(239, 68, 68, 0.09);
+      --danger-border: rgba(239, 68, 68, 0.35);
+      --danger-text: #fca5a5;
+      --success-surface: rgba(16, 185, 129, 0.10);
+      --success-border: rgba(16, 185, 129, 0.35);
       --success-text: #34d399;
+      --warn-surface: rgba(245, 158, 11, 0.10);
+      --warn-border: rgba(245, 158, 11, 0.35);
+      --warn-text: #fbbf24;
       --radius-sm: 4px;
       --radius-md: 8px;
       --radius-lg: 12px;
+      --space-xs: 0.5rem;
+      --space-sm: 0.75rem;
+      --space-md: 1.25rem;
+      --space-lg: 2rem;
+      --space-xl: 4rem;
       --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
       --font-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
     }
@@ -39,6 +48,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -52,7 +65,6 @@
       overflow-x: hidden;
     }
 
-    /* Accessibility focus ring */
     :focus-visible {
       outline: 2px solid var(--border-focus);
       outline-offset: 2px;
@@ -73,7 +85,7 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(8, 9, 13, 0.85);
+      background: rgba(8, 9, 13, 0.88);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-hairline);
@@ -82,38 +94,49 @@
     .nav-container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0.875rem 1.5rem;
+      padding: 0.75rem 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
     }
 
     .brand {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.625rem;
       font-weight: 700;
-      font-size: 1.125rem;
+      font-size: 1.0625rem;
       letter-spacing: -0.02em;
       color: var(--text-primary);
+      min-height: 44px;
     }
 
     .brand-icon {
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       color: var(--accent-primary);
     }
 
     .nav-links {
       display: none;
       align-items: center;
-      gap: 1.75rem;
+      gap: 1.5rem;
       font-size: 0.875rem;
       font-weight: 500;
       color: var(--text-secondary);
     }
 
-    @media (min-width: 768px) {
+    .nav-links a {
+      color: var(--text-secondary);
+      padding: 0.5rem 0;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-primary);
+    }
+
+    @media (min-width: 900px) {
       .nav-links {
         display: flex;
       }
@@ -122,7 +145,7 @@
     .nav-actions {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.625rem;
     }
 
     .btn {
@@ -133,12 +156,22 @@
       font-family: var(--font-sans);
       font-size: 0.875rem;
       font-weight: 600;
+      min-height: 44px;
       padding: 0.5rem 1rem;
       border-radius: var(--radius-md);
       border: 1px solid transparent;
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
       white-space: nowrap;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
     }
 
     .btn-primary {
@@ -153,6 +186,11 @@
       color: #ffffff;
     }
 
+    .btn-primary:active {
+      background: var(--accent-active);
+      border-color: var(--accent-active);
+    }
+
     .btn-secondary {
       background: var(--bg-surface);
       color: var(--text-primary);
@@ -161,21 +199,28 @@
 
     .btn-secondary:hover {
       background: var(--bg-surface-elevated);
-      border-color: rgba(255, 255, 255, 0.18);
+      border-color: var(--border-strong);
+      color: var(--text-primary);
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
-      padding: 5rem 1.5rem 4rem;
+      padding: 3.5rem 1.25rem 3rem;
       max-width: 1280px;
       margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 5rem 1.5rem 4rem;
+      }
     }
 
     .badge-bar {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.25rem 0.75rem;
+      padding: 0.35rem 0.85rem;
       border-radius: 9999px;
       background: var(--accent-surface);
       border: 1px solid var(--accent-border);
@@ -186,12 +231,12 @@
     }
 
     .hero-title {
-      font-size: 2.75rem;
-      line-height: 1.1;
+      font-size: 2.5rem;
+      line-height: 1.08;
       font-weight: 800;
       letter-spacing: -0.04em;
-      margin-bottom: 1.5rem;
-      max-width: 22ch;
+      margin-bottom: 1.25rem;
+      max-width: 20ch;
     }
 
     @media (min-width: 768px) {
@@ -201,9 +246,9 @@
     }
 
     .hero-lead {
-      font-size: 1.125rem;
+      font-size: 1.0625rem;
       color: var(--text-secondary);
-      max-width: 65ch;
+      max-width: 64ch;
       margin-bottom: 2rem;
       line-height: 1.7;
     }
@@ -211,15 +256,14 @@
     .hero-ctas {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 3.5rem;
+      gap: 0.875rem;
+      margin-bottom: 3rem;
     }
 
-    /* Stats Grid */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+      gap: 0.875rem;
       padding-top: 2rem;
       border-top: 1px solid var(--border-hairline);
     }
@@ -227,6 +271,7 @@
     @media (min-width: 768px) {
       .stats-grid {
         grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
       }
     }
 
@@ -239,29 +284,35 @@
 
     .stat-val {
       font-family: var(--font-mono);
-      font-size: 1.875rem;
+      font-size: 1.75rem;
       font-weight: 700;
       color: var(--text-primary);
       margin-bottom: 0.25rem;
     }
 
     .stat-label {
-      font-size: 0.8125rem;
+      font-size: 0.75rem;
       color: var(--text-muted);
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
     }
 
-    /* Section Structure */
+    /* Sections */
     .section {
-      padding: 4rem 1.5rem;
+      padding: 3.5rem 1.25rem;
       max-width: 1280px;
       margin: 0 auto;
       border-top: 1px solid var(--border-hairline);
     }
 
+    @media (min-width: 768px) {
+      .section {
+        padding: 4.5rem 1.5rem;
+      }
+    }
+
     .section-header {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.25rem;
     }
 
     .section-tag {
@@ -274,18 +325,24 @@
     }
 
     .section-title {
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-weight: 700;
       letter-spacing: -0.03em;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.625rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 2.125rem;
+      }
     }
 
     .section-desc {
       color: var(--text-secondary);
-      max-width: 70ch;
+      max-width: 68ch;
     }
 
-    /* Simulator Panel */
+    /* Simulator */
     .sim-container {
       background: var(--bg-surface);
       border: 1px solid var(--border-hairline);
@@ -301,20 +358,22 @@
     }
 
     .sim-tab {
-      padding: 0.875rem 1.5rem;
+      padding: 0.875rem 1.25rem;
+      min-height: 44px;
       font-family: var(--font-mono);
       font-size: 0.8125rem;
       color: var(--text-muted);
       background: transparent;
       border: none;
-      cursor: pointer;
       border-bottom: 2px solid transparent;
+      cursor: pointer;
       white-space: nowrap;
-      transition: all 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
     }
 
     .sim-tab:hover {
       color: var(--text-primary);
+      background: var(--bg-surface-elevated);
     }
 
     .sim-tab.active {
@@ -326,20 +385,22 @@
     .sim-body {
       display: grid;
       grid-template-columns: 1fr;
-      padding: 1.5rem;
-      gap: 2rem;
+      padding: 1.25rem;
+      gap: 1.5rem;
     }
 
     @media (min-width: 900px) {
       .sim-body {
         grid-template-columns: 360px 1fr;
+        padding: 1.5rem;
+        gap: 2rem;
       }
     }
 
     .sim-controls {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     .control-group {
@@ -368,23 +429,23 @@
       height: 6px;
       background: var(--bg-subtle);
       border-radius: 3px;
-      outline: none;
     }
 
     input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       background: var(--accent-primary);
       border-radius: 50%;
       cursor: pointer;
       border: 2px solid var(--bg-surface);
-      transition: transform 0.1s ease;
+      transition: transform 0.1s ease, background-color 0.15s ease;
     }
 
     input[type="range"]::-webkit-slider-thumb:hover {
-      transform: scale(1.15);
+      transform: scale(1.12);
+      background: var(--accent-hover);
     }
 
     .sim-metrics {
@@ -404,7 +465,7 @@
 
     .metric-val {
       font-family: var(--font-mono);
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       font-weight: 700;
       color: var(--text-primary);
     }
@@ -424,7 +485,9 @@
 
     .sim-chart-header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+      gap: 0.5rem;
       font-size: 0.8125rem;
       color: var(--text-muted);
       margin-bottom: 1rem;
@@ -432,19 +495,19 @@
 
     .chart-container {
       flex: 1;
-      min-height: 260px;
+      min-height: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    /* Vector Grid */
+    /* Lead Champion Cards */
     .vector-lead-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-hairline);
       border-radius: var(--radius-lg);
-      padding: 2rem;
-      margin-bottom: 2rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
@@ -452,6 +515,7 @@
 
     @media (min-width: 900px) {
       .vector-lead-card {
+        padding: 2rem;
         grid-template-columns: 1fr 340px;
         align-items: center;
       }
@@ -461,7 +525,7 @@
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
+      padding: 0.25rem 0.6rem;
       background: var(--success-surface);
       border: 1px solid var(--success-border);
       color: var(--success-text);
@@ -470,7 +534,7 @@
     }
 
     .card-title {
-      font-size: 1.5rem;
+      font-size: 1.375rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: 0.75rem;
@@ -479,7 +543,7 @@
     .card-text {
       color: var(--text-secondary);
       font-size: 0.9375rem;
-      line-height: 1.6;
+      line-height: 1.65;
       margin-bottom: 1.25rem;
     }
 
@@ -495,10 +559,32 @@
       overflow-x: auto;
     }
 
+    .benchmark-box {
+      background: var(--bg-canvas);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+
+    .benchmark-kicker {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+    }
+
+    .bar-track {
+      height: 6px;
+      background: var(--bg-subtle);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
     .grid-cards {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     @media (min-width: 768px) {
@@ -525,11 +611,7 @@
     }
 
     .sub-card:hover {
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .sub-card-header {
-      margin-bottom: 1rem;
+      border-color: var(--border-strong);
     }
 
     .sub-card-tag {
@@ -540,32 +622,198 @@
     }
 
     .sub-card-title {
-      font-size: 1.125rem;
+      font-size: 1.0625rem;
       font-weight: 600;
       color: var(--text-primary);
+      margin-bottom: 0.75rem;
     }
 
     .sub-card-desc {
       font-size: 0.875rem;
       color: var(--text-secondary);
       margin-bottom: 1.25rem;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
-    /* Dead Hypothesis Ledger */
+    /* 77-Vector Explorer */
+    .explorer-toolbar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-input {
+      width: 100%;
+      max-width: 420px;
+      min-height: 44px;
+      padding: 0.625rem 0.875rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-input:focus {
+      outline: 2px solid var(--border-focus);
+      border-color: var(--border-focus);
+    }
+
+    .explorer-count {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill-btn {
+      min-height: 36px;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .pill-btn:hover {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .pill-btn.active {
+      background: var(--accent-surface);
+      border-color: var(--accent-border);
+      color: var(--accent-hover);
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (min-width: 768px) {
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .vec-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.125rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.625rem;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .vec-item:hover {
+      border-color: var(--border-strong);
+      background: var(--bg-surface-elevated);
+    }
+
+    .vec-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    .vec-num {
+      color: var(--accent-hover);
+      font-weight: 700;
+    }
+
+    .status-pill {
+      padding: 0.125rem 0.45rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.6875rem;
+      border: 1px solid var(--border-hairline);
+      color: var(--text-secondary);
+    }
+
+    .status-live {
+      background: var(--success-surface);
+      border-color: var(--success-border);
+      color: var(--success-text);
+    }
+
+    .status-wounded {
+      background: var(--warn-surface);
+      border-color: var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .status-dead {
+      background: var(--danger-surface);
+      border-color: var(--danger-border);
+      color: var(--danger-text);
+    }
+
+    .vec-title {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.35;
+    }
+
+    .vec-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Dead Ledger */
     .ledger-card {
       background: var(--bg-surface);
       border: 1px solid var(--danger-border);
       border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .ledger-badge {
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
+      padding: 0.25rem 0.55rem;
       background: var(--danger-surface);
       border: 1px solid var(--danger-border);
       color: var(--danger-text);
@@ -573,11 +821,11 @@
       margin-bottom: 0.75rem;
     }
 
-    /* Protocol List */
+    /* Protocol */
     .protocol-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
     @media (min-width: 768px) {
@@ -595,27 +843,27 @@
 
     .protocol-num {
       font-family: var(--font-mono);
-      font-size: 0.875rem;
+      font-size: 0.8125rem;
       color: var(--accent-hover);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
 
     .protocol-name {
       font-size: 1rem;
       font-weight: 600;
       color: var(--text-primary);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
 
     .protocol-text {
       font-size: 0.8125rem;
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
-    /* Terminal Code Box */
+    /* Terminal */
     .term-box {
-      background: #000000;
+      background: #040508;
       border: 1px solid var(--border-hairline);
       border-radius: var(--radius-md);
       padding: 1.25rem;
@@ -623,7 +871,7 @@
       font-size: 0.8125rem;
       color: #38bdf8;
       overflow-x: auto;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .term-prompt {
@@ -634,7 +882,7 @@
     /* Footer */
     .footer {
       border-top: 1px solid var(--border-hairline);
-      padding: 3rem 1.5rem;
+      padding: 3rem 1.25rem;
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
@@ -649,16 +897,16 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 3rem 1.5rem;
       }
     }
 
     .footer-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
 
-    /* SVG utilities */
     .icon {
       display: inline-block;
       width: 16px;
@@ -674,11 +922,10 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav" aria-label="Main Navigation">
     <div class="nav-container">
       <a href="#" class="brand">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
           <polyline points="2 17 12 22 22 17"></polyline>
           <polyline points="2 12 12 17 22 12"></polyline>
@@ -687,19 +934,19 @@
       </a>
 
       <div class="nav-links">
-        <a href="#simulator">Live Simulator</a>
-        <a href="#inventions">20 Inventions</a>
+        <a href="#simulator">Simulator</a>
+        <a href="#inventions">Breakthroughs</a>
+        <a href="#catalog">77-Vector Catalog</a>
         <a href="#dead-hypotheses">Dead Ledger</a>
-        <a href="#protocol">Research Protocol</a>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/DISCOVERY_COMPENDIUM.md" target="_blank" rel="noopener">Compendium</a>
+        <a href="#protocol">Protocol</a>
       </div>
 
       <div class="nav-actions">
-        <a href="https://colab.research.google.com/github/aruninf/ai-edison/blob/main/notebooks/run_all_sweeps.ipynb" target="_blank" rel="noopener" class="btn btn-secondary">
-          <span>Colab Runner</span>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <span>Contribute</span>
         </a>
         <a href="https://github.com/aruninf/ai-edison" target="_blank" rel="noopener" class="btn btn-primary">
-          <svg class="icon" viewBox="0 0 24 24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
           </svg>
           <span>GitHub</span>
@@ -708,103 +955,136 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <header class="hero">
     <div class="badge-bar">
-      <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-      <span>70,000 IN SILICO TRIALS VERIFIED : 100% GREEN CI</span>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      <span>77 VECTORS CATALOGED : 80,000 IN SILICO TRIALS VERIFIED</span>
     </div>
 
     <h1 class="hero-title">Discover What Does Not Yet Exist</h1>
 
     <p class="hero-lead">
-      An autonomous discovery intelligence operating from physics, mathematics, logic, and experimental design alone.
-      No surveys, no patents, and zero external literature retrieval during discovery.
-      We formulate uncatalogued physical mechanisms: and kill them before anyone else does.
+      An autonomous first-principles discovery engine operating from physics, mathematics, conservation laws, and experimental falsification alone.
+      Zero surveys, zero patent copying, and zero external literature retrieval during discovery.
     </p>
 
     <div class="hero-ctas">
-      <a href="#simulator" class="btn btn-primary">
-        <span>Open Interactive Simulator</span>
-      </a>
-      <a href="https://github.com/aruninf/ai-edison/blob/main/DISCOVERY_COMPENDIUM.md" target="_blank" rel="noopener" class="btn btn-secondary">
-        <span>Read Master Compendium (20 Vectors)</span>
-      </a>
+      <a href="#catalog" class="btn btn-primary">Explore All 77 Vectors</a>
+      <a href="#simulator" class="btn btn-secondary">Open Physics Simulator</a>
+      <a href="https://github.com/aruninf/ai-edison/blob/main/directions/README.md" target="_blank" rel="noopener" class="btn btn-secondary">Master Index</a>
     </div>
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-val">20</div>
-        <div class="stat-label">Uncatalogued Vectors</div>
+        <div class="stat-val">77</div>
+        <div class="stat-label">Discovery Vectors</div>
       </div>
       <div class="stat-card">
-        <div class="stat-val">70,000</div>
+        <div class="stat-val">80,000</div>
         <div class="stat-label">Virtual Trials Verified</div>
       </div>
       <div class="stat-card">
-        <div class="stat-val">0</div>
-        <div class="stat-label">Pip Dependencies</div>
+        <div class="stat-val">30.46x</div>
+        <div class="stat-label">Peak CHF vs Kutateladze</div>
       </div>
       <div class="stat-card">
-        <div class="stat-val">99.4%</div>
-        <div class="stat-label">Peak Pressure Decoupling</div>
+        <div class="stat-val">0</div>
+        <div class="stat-label">External Pip Dependencies</div>
       </div>
     </div>
   </header>
 
-  <!-- Interactive Multi-Physics Simulator -->
   <section id="simulator" class="section">
     <div class="section-header">
       <div class="section-tag">Interactive Physics Engine</div>
-      <h2 class="section-title">In-Browser Real-Time Multi-Physics Verification</h2>
+      <h2 class="section-title">In-Browser Multi-Physics Verification</h2>
       <p class="section-desc">
-        Evaluate the governing mathematical models in real-time. Adjust physical boundary conditions and observe the resulting non-linear response.
+        Adjust boundary conditions in real time across four Virtual-Validated mechanisms and inspect the governing physical curves.
       </p>
     </div>
 
     <div class="sim-container">
       <div class="sim-tabs" role="tablist">
-        <button class="sim-tab active" id="tab-sthd" role="tab" aria-selected="true" onclick="setSimMode('sthd')">EXP-008: Hydrostatic Decoupler</button>
-        <button class="sim-tab" id="tab-diode" role="tab" aria-selected="false" onclick="setSimMode('diode')">EXP-003: Static Mechanical Diode</button>
-        <button class="sim-tab" id="tab-spin" role="tab" aria-selected="false" onclick="setSimMode('spin')">EXP-009: Solid Latent Heat Capacitor</button>
+        <button class="sim-tab active" id="tab-chf" role="tab" aria-selected="true" onclick="setSimMode('chf')">EXP-010: Vapor-Jet CHF</button>
+        <button class="sim-tab" id="tab-sthd" role="tab" aria-selected="false" onclick="setSimMode('sthd')">EXP-008: Hydrostatic Decoupler</button>
+        <button class="sim-tab" id="tab-diode" role="tab" aria-selected="false" onclick="setSimMode('diode')">EXP-003: Mechanical Diode</button>
+        <button class="sim-tab" id="tab-spin" role="tab" aria-selected="false" onclick="setSimMode('spin')">EXP-009: Solid Latent Heat</button>
       </div>
 
       <div class="sim-body">
-        <div class="sim-controls" id="sim-controls-container">
-          <!-- Dynamic Controls rendered by JS -->
-        </div>
-
+        <div class="sim-controls" id="sim-controls-container"></div>
         <div class="sim-visual">
           <div class="sim-chart-header">
-            <span id="chart-title">Hydrostatic Pressure vs. Column Depth</span>
-            <span id="chart-badge" style="font-family: var(--font-mono); color: var(--accent-hover);">Stevin vs. Smectic-A</span>
+            <span id="chart-title">Critical Heat Flux vs. Base Wall Superheat</span>
+            <span id="chart-badge" style="font-family: var(--font-mono); color: var(--accent-hover);">Kutateladze-Zuber vs. TAVJ-DL</span>
           </div>
-          <div class="chart-container" id="chart-container">
-            <!-- Dynamic SVG Chart rendered by JS -->
-          </div>
+          <div class="chart-container" id="chart-container"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Core Inventions Grid -->
   <section id="inventions" class="section">
     <div class="section-header">
-      <div class="section-tag">First-Principles Discovery Matrix</div>
-      <h2 class="section-title">Champion Physical Mechanisms</h2>
+      <div class="section-tag">Frontier Breakthroughs</div>
+      <h2 class="section-title">Flagship Physical Mechanisms</h2>
       <p class="section-desc">
-        Every mechanism is formulated using a 16-point output template: stripped requirements, explicit falsification statements, derived governing mathematics, and quantified failure thresholds.
+        Each dossier follows the 16-point canonical template: stripped physical requirement, falsification-first condition, tagged variables, dimensional checks, and contradiction ledger.
       </p>
     </div>
 
-    <!-- Lead Champion Card 1: Vector 19 / EXP-008 -->
+    <!-- Lead Champion 1: Vector 77 / EXP-010 -->
     <div class="vector-lead-card">
       <div>
-        <div class="card-badge">Virtual-Validated : EXP-20261117-008</div>
+        <div class="card-badge">Virtual-Validated : Vector 77 / EXP-20261125-010</div>
+        <h3 class="card-title">Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice</h3>
+        <p class="card-text">
+          Breaks the Kutateladze-Zuber pool-boiling Critical Heat Flux limit (1.109 MW/m^2 at 1 atm) without external pumps. Confined copper-385 micro-chambers convert wall superheat into Clausius-Clapeyron vapor overpressure (3.62 kPa/K), firing high-Weber vapor jets (v_v up to 215.4 m/s, We_jet = 61.89) vertically while orthogonal Tesla-diode arteries (Di = 2.97) passively pump fresh liquid return laterally.
+        </p>
+        <div class="formula-box">
+          Delta P_drive = (h_fg * rho_v / T_sat) * (Delta T_b - q * h_wall / (k_Cu * phi_s))
+        </div>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/directions/77-thermo-acoustic-vapor-jet-chf-lattice.md" target="_blank" rel="noopener" class="btn btn-secondary">
+          <span>Read Vector 77 Dossier</span>
+        </a>
+      </div>
+
+      <div class="benchmark-box">
+        <div class="benchmark-kicker">1 ATM WATER POOL-BOILING CHF</div>
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; margin-bottom: 0.25rem;">
+            <span>Kutateladze-Zuber Limit</span>
+            <span style="font-family: var(--font-mono); color: var(--danger-text);">1.11 MW/m^2</span>
+          </div>
+          <div class="bar-track"><div style="width: 3.3%; height: 100%; background: var(--danger-text);"></div></div>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; margin-bottom: 0.25rem;">
+            <span>Viable Regime Median (10k Sweep)</span>
+            <span style="font-family: var(--font-mono); color: var(--accent-hover);">15.42 MW/m^2</span>
+          </div>
+          <div class="bar-track"><div style="width: 45.6%; height: 100%; background: var(--accent-primary);"></div></div>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; margin-bottom: 0.25rem;">
+            <span>Champion (Trial #5893)</span>
+            <span style="font-family: var(--font-mono); color: var(--success-text);">33.78 MW/m^2</span>
+          </div>
+          <div class="bar-track"><div style="width: 100%; height: 100%; background: var(--success-text);"></div></div>
+        </div>
+        <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); font-size: 0.8125rem; color: var(--text-muted);">
+          Enhancement: <strong style="color: var(--text-primary); font-family: var(--font-mono);">30.46x KZ</strong> | HTC: <strong style="color: var(--text-primary); font-family: var(--font-mono);">761.9 kW/(m^2*K)</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lead Champion 2: Vector 19 / EXP-008 -->
+    <div class="vector-lead-card">
+      <div>
+        <div class="card-badge">Virtual-Validated : Vector 19 / EXP-20261117-008</div>
         <h3 class="card-title">Smectic Topological Hydrostatic Decoupler (STHD)</h3>
         <p class="card-text">
-          Decouples static fluid pressure from vertical depth in macroscopic open liquid columns.
-          Constraining a smectic-A liquid crystal inside 45-degree helical homeotropic micro-grooved walls harnesses the smectic layer compression modulus ($B \approx 25\text{ MPa}$) to divert downward gravitational body force into sidewall hoop shear, saturating bottom pressure at 5.84 kPa at 100 meters depth (99.43% reduction) while preserving mobile fluidity at the core.
+          Decouples static fluid pressure from vertical depth in open liquid columns. Constraining a smectic-A liquid crystal inside 45-degree helical homeotropic micro-grooved walls diverts gravitational body force into sidewall hoop shear, saturating bottom pressure at 5.84 kPa at 100 m depth (99.43% reduction) while preserving mobile core fluidity.
         </p>
         <div class="formula-box">
           P(z) = [rho * g * R / (2 * lambda_s)] * [1 - exp(- 2 * lambda_s * z / R)]
@@ -814,25 +1094,21 @@
         </a>
       </div>
 
-      <div style="background: var(--bg-canvas); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem;">
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem; font-family: var(--font-mono);">100-METER COLUMN COMPARISON</div>
+      <div class="benchmark-box">
+        <div class="benchmark-kicker">100-METER COLUMN COMPARISON</div>
         <div style="margin-bottom: 1rem;">
           <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; margin-bottom: 0.25rem;">
             <span>Classical Stevin Hydrostatic</span>
             <span style="font-family: var(--font-mono); color: var(--danger-text);">1,030.0 kPa</span>
           </div>
-          <div style="height: 6px; background: var(--bg-subtle); border-radius: 3px; overflow: hidden;">
-            <div style="width: 100%; height: 100%; background: var(--danger-text);"></div>
-          </div>
+          <div class="bar-track"><div style="width: 100%; height: 100%; background: var(--danger-text);"></div></div>
         </div>
         <div>
           <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; margin-bottom: 0.25rem;">
             <span>Smectic-A Helical Saturation</span>
             <span style="font-family: var(--font-mono); color: var(--success-text);">5.84 kPa</span>
           </div>
-          <div style="height: 6px; background: var(--bg-subtle); border-radius: 3px; overflow: hidden;">
-            <div style="width: 0.57%; height: 100%; background: var(--success-text);"></div>
-          </div>
+          <div class="bar-track"><div style="width: 0.57%; height: 100%; background: var(--success-text);"></div></div>
         </div>
         <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); font-size: 0.8125rem; color: var(--text-muted);">
           Reduction: <strong style="color: var(--text-primary); font-family: var(--font-mono);">99.43% (176x)</strong> | Viscosity: <strong style="color: var(--text-primary); font-family: var(--font-mono);">0.048 Pa*s</strong>
@@ -840,154 +1116,153 @@
       </div>
     </div>
 
-    <!-- Lead Champion Card 2: Vector 20 / EXP-009 -->
-    <div class="vector-lead-card">
-      <div>
-        <div class="card-badge">Virtual-Validated : EXP-20261117-009</div>
-        <h3 class="card-title">Cooperative Spin-State Solid Latent Heat Capacitor</h3>
-        <p class="card-text">
-          Stores and releases giant latent heat ($351.59\text{ kJ/kg}$, matching water-ice) isothermally ($77.9^\circ\text{C}$) in a completely dry, rigid solid crystal with zero liquid phase and bulk volume expansion below 0.05%.
-          Powered by cooperative electronic spin crossover ($S=0 \leftrightarrow S=2$) and acoustic phonon softening in iron(II) coordination polymer networks, eliminating liquid leaks, container corrosion, and freeze-thaw degradation.
-        </p>
-        <div class="formula-box">
-          Delta S_trans = R * ln(2S + 1) + 3R * ln(omega_LS / omega_HS) ~ 55.88 J/(mol*K)
-        </div>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md" target="_blank" rel="noopener" class="btn btn-secondary">
-          <span>Read EXP-009 Dossier</span>
-        </a>
-      </div>
-
-      <div style="background: var(--bg-canvas); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1.25rem;">
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem; font-family: var(--font-mono);">ENERGY STORAGE BENCHMARK</div>
-        <div style="margin-bottom: 0.75rem;">
-          <div style="display: flex; justify-content: space-between; font-size: 0.8125rem;">
-            <span>Paraffin Wax (Liquid Melting)</span>
-            <span style="font-family: var(--font-mono);">200 kJ/kg</span>
-          </div>
-        </div>
-        <div style="margin-bottom: 0.75rem;">
-          <div style="display: flex; justify-content: space-between; font-size: 0.8125rem;">
-            <span>Water-Ice (Liquid Melting)</span>
-            <span style="font-family: var(--font-mono);">334 kJ/kg</span>
-          </div>
-        </div>
-        <div style="padding-top: 0.75rem; border-top: 1px solid var(--border-hairline);">
-          <div style="display: flex; justify-content: space-between; font-size: 0.875rem; font-weight: 600;">
-            <span style="color: var(--success-text);">Dry Solid Coordination Crystal</span>
-            <span style="font-family: var(--font-mono); color: var(--success-text);">351.6 kJ/kg</span>
-          </div>
-        </div>
-        <div style="margin-top: 1rem; font-size: 0.8125rem; color: var(--text-muted);">
-          Phase State: <strong style="color: var(--text-primary);">100% Rigid Solid</strong> | Hysteresis: <strong style="color: var(--text-primary); font-family: var(--font-mono);">0.20 K</strong>
-        </div>
-      </div>
-    </div>
-
-    <!-- Secondary Grid -->
     <div class="grid-cards">
       <div class="sub-card">
-        <div class="sub-card-header">
+        <div>
+          <div class="sub-card-tag">Vector 76 : Thermal Super-Insulator</div>
+          <h4 class="sub-card-title">Chiral Phononic Flat-Band Solid</h4>
+          <p class="sub-card-desc">
+            Bypasses the Cahill-Pohl limit with guest-rattler anti-crossing (v_g &lt;= 4.2 m/s) and 0.48 nm Knudsen cages, achieving k_eff = 0.00062 W/(m*K) (42x below air) at 1 atm with zero vacuum.
+          </p>
+        </div>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/directions/76-chiral-phononic-flat-band-super-insulator.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
+      </div>
+
+      <div class="sub-card">
+        <div>
+          <div class="sub-card-tag">Vector 75 : Quantum Bearing</div>
+          <h4 class="sub-card-title">Repulsive Vacuum-Casimir Bearing</h4>
+          <p class="sub-card-desc">
+            Non-reciprocal axion magnetoelectric coupling in Co3Sn2S2 flips the vacuum Casimir stress tensor to +47.1 kPa repulsion at d = 20 nm, enabling zero-wear non-contact rotation.
+          </p>
+        </div>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/directions/75-repulsive-vacuum-casimir-topological-bearing.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
+      </div>
+
+      <div class="sub-card">
+        <div>
+          <div class="sub-card-tag">Vector 20 : EXP-009</div>
+          <h4 class="sub-card-title">Cooperative Spin-State Capacitor</h4>
+          <p class="sub-card-desc">
+            All-solid, dry coordination crystal storing 351.6 kJ/kg isothermally (77.9 C) via electronic spin crossover with sub-0.20 K hysteresis and zero melting.
+          </p>
+        </div>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
+      </div>
+
+      <div class="sub-card">
+        <div>
           <div class="sub-card-tag">Vector 12 : EXP-003</div>
           <h4 class="sub-card-title">Static Mechanical Diode</h4>
+          <p class="sub-card-desc">
+            Breaks Maxwell-Betti reciprocity in static mechanics: 99.6% forward axial transmission vs 0.00% backward transmission (20,144:1 rectification ratio).
+          </p>
         </div>
-        <p class="sub-card-desc">
-          Breaks Maxwell-Betti reciprocity in static mechanics. Unidirectional axial force transmission ($T_{fwd} = 99.6\%$) while diverting backward shock into self-equilibrating hoop tension ($T_{bwd} = 0.00\%$, $\mathcal{R} > 20,000 : 1$).
-        </p>
         <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-003-static-mechanical-diode.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
       </div>
 
       <div class="sub-card">
-        <div class="sub-card-header">
-          <div class="sub-card-tag">Vector 07 : EXP-002</div>
-          <h4 class="sub-card-title">Nanoporous Cavitation Oscillator</h4>
+        <div>
+          <div class="sub-card-tag">Vector 68 : Cold-Chain Elimination</div>
+          <h4 class="sub-card-title">Zwitterionic Hydration-Shell Glass</h4>
+          <p class="sub-card-desc">
+            Replaces water with a 0.278 nm zwitterionic oligopeptide glass (T_g = 98.5 C) stabilizing biologics and mRNA-LNPs at +50 C without refrigeration.
+          </p>
         </div>
-        <p class="sub-card-desc">
-          Autonomous kinetic power (>300 W peak) and RF chirps extracted continuously from ambient humidity gradients (-23 MPa chemical potential) via metastable cavitation snaps.
-        </p>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-002-evaporative-cavitation-oscillator.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/directions/68-ambient-zwitterionic-hydration-shell-vaccine-preserver.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
       </div>
 
       <div class="sub-card">
-        <div class="sub-card-header">
-          <div class="sub-card-tag">Vector 14 : EXP-005</div>
-          <h4 class="sub-card-title">Piezocatalytic Concrete Composite</h4>
+        <div>
+          <div class="sub-card-tag">Vector 61 : Green Hydrogen</div>
+          <h4 class="sub-card-title">Chiral Spin-Gated Water Engine</h4>
+          <p class="sub-card-desc">
+            Chiral CoSi Weyl semimetal anode generating 380 T spin-orbit field, cutting OER overpotential to 0.12 V (39.3 kWh/kg H2) and blocking Cl2 in raw seawater.
+          </p>
         </div>
-        <p class="sub-card-desc">
-          Civil road composite converting traffic vibration into >80 V piezocatalytic potentials, driving passive atmospheric CO2 mineralization (19.4 tons/km/year) and autonomous crack healing.
-        </p>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-005-mechanocatalytic-carbon-mineralizer.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
-      </div>
-
-      <div class="sub-card">
-        <div class="sub-card-header">
-          <div class="sub-card-tag">Vector 13 : EXP-004</div>
-          <h4 class="sub-card-title">Bistable Auxetic Water Generator</h4>
-        </div>
-        <p class="sub-card-desc">
-          Extracts clean liquid water from arid air (20-50% RH) via steric contact-angle inversion and mechanical snap-through with zero electricity and zero photothermal heat.
-        </p>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-004-mechanochemical-water-generator.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
-      </div>
-
-      <div class="sub-card">
-        <div class="sub-card-header">
-          <div class="sub-card-tag">Vector 18 : EXP-007</div>
-          <h4 class="sub-card-title">Topological Acoustic Soliton Flywheel</h4>
-        </div>
-        <p class="sub-card-desc">
-          Stores macroscopic kinetic energy (1.55 kJ/kg) within stationary, non-rotating single-crystal silicon toroids via supersonic torsional kink solitons (v = 4,820 m/s) with zero mechanical bearings.
-        </p>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-007-topological-soliton-flywheel.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
-      </div>
-
-      <div class="sub-card">
-        <div class="sub-card-header">
-          <div class="sub-card-tag">Vector 17 : EXP-006</div>
-          <h4 class="sub-card-title">Flexogalvanic Redox Engine</h4>
-        </div>
-        <p class="sub-card-desc">
-          Monolithic mixed ionic-electronic ceramic nano-wedges where permanent elastic strain gradients (>10^5 m^-1) drive oxygen vacancy drift to sustain steady-state electrochemical DC potentials.
-        </p>
-        <a href="https://github.com/aruninf/ai-edison/blob/main/hypotheses/EXP-006-flexogalvanic-redox-engine.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
+        <a href="https://github.com/aruninf/ai-edison/blob/main/directions/61-chiral-topological-spin-gated-water-engine.md" target="_blank" rel="noopener" class="btn btn-secondary">Dossier</a>
       </div>
     </div>
   </section>
 
-  <!-- Dead Hypothesis Ledger -->
+  <!-- Searchable & Filterable 77-Vector Catalog -->
+  <section id="catalog" class="section">
+    <div class="section-header">
+      <div class="section-tag">Complete Repository Index</div>
+      <h2 class="section-title">All 77 Discovery Vectors by Domain</h2>
+      <p class="section-desc">
+        Filter by physical domain or search by keyword, number, or mechanism. Every link opens the full first-principles dossier on GitHub.
+      </p>
+    </div>
+
+    <div class="explorer-toolbar">
+      <div class="search-row">
+        <input type="search" id="vec-search" class="search-input" placeholder="Search vectors (e.g. Casimir, kidney, 77, desalination, dead)..." aria-label="Search 77 discovery vectors">
+        <div class="explorer-count" id="explorer-count">Showing 77 of 77 vectors</div>
+      </div>
+
+      <div class="filter-pills" role="group" aria-label="Filter by domain category">
+        <button class="pill-btn active" data-cat="all">All (77)</button>
+        <button class="pill-btn" data-cat="Thermal">Thermal &amp; Phononic (12)</button>
+        <button class="pill-btn" data-cat="Mechanics">Mechanics &amp; Metamaterials (12)</button>
+        <button class="pill-btn" data-cat="Fluidics">Fluidics &amp; Water (9)</button>
+        <button class="pill-btn" data-cat="Energy">Energy &amp; Electrochemistry (14)</button>
+        <button class="pill-btn" data-cat="Medicine">Biology &amp; Medicine (17)</button>
+        <button class="pill-btn" data-cat="Quantum">Quantum &amp; EM (5)</button>
+        <button class="pill-btn" data-cat="Methodology">Methodology (6)</button>
+        <button class="pill-btn" data-cat="Dead">Dead Archive (2)</button>
+      </div>
+    </div>
+
+    <div class="catalog-grid" id="catalog-grid"></div>
+  </section>
+
   <section id="dead-hypotheses" class="section">
     <div class="section-header">
       <div class="section-tag">Epistemological Integrity</div>
       <h2 class="section-title">The Dead-Hypothesis Ledger</h2>
       <p class="section-desc">
-        Under the Research Protocol, falsified hypotheses are never quietly rehabilitated or deleted.
-        They are declared dead in the open ledger with their exact mathematical killing blows preserved.
+        Falsified hypotheses are never quietly rehabilitated or deleted. They remain in the permanent record with their mathematical killing blows published.
       </p>
     </div>
 
     <div class="ledger-card">
-      <div class="ledger-badge">STATUS: DEAD : KILLING BLOW PUBLISHED</div>
-      <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--danger-text);">
-        Dislocation-Core Configurational Entropy for All-Solid Latent Heat
+      <div class="ledger-badge">STATUS: DEAD : VECTOR 56</div>
+      <h3 style="font-size: 1.1875rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--danger-text);">
+        Hot-Carrier Extraction Beyond the Shockley-Queisser Limit
       </h3>
-      <p style="font-size: 0.9375rem; color: var(--text-secondary); margin-bottom: 1rem;">
-        <strong>Initial Claim:</strong> Tangling and untangling dense dislocation networks in high-entropy alloys (FeCoCrNiMn) could store >180 kJ/kg latent heat via configurational entropy shifts.
+      <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+        <strong>The Killing Blow:</strong> Killed by detailed balance. An energy-selective contact emits at the same chemical potential it accepts, capping one-sun conversion at 33.7%; the 1 to 10 ps thermalization window against a 100 ps collection time closes the mechanism twice.
       </p>
-      <div style="background: var(--bg-canvas); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: 1rem; font-family: var(--font-mono); font-size: 0.8125rem; color: var(--danger-text); margin-bottom: 1rem;">
-        phi_core = rho_disloc * pi * r_core^2 &lt; 0.1% atomic sites ==&gt; Delta H_max = 0.055 kJ/kg (Deficit: 3,300x)
-      </div>
-      <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-        <strong>The Killing Blow:</strong> Even at dislocation saturation density ($\rho = 10^{16}\text{ m}^{-2}$), dislocation cores occupy less than 0.1% of atomic volume. The maximum theoretical latent heat is $0.055\text{ kJ/kg}$, falling short of the $180\text{ kJ/kg}$ target by 3 orders of magnitude. The hypothesis was declared dead and replaced by the surviving Cooperative Spin-Crossover mechanism (EXP-009).
+    </div>
+
+    <div class="ledger-card">
+      <div class="ledger-badge">STATUS: DEAD : VECTOR 60</div>
+      <h3 style="font-size: 1.1875rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--danger-text);">
+        Magnetic Scale Prevention in Hard Water
+      </h3>
+      <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+        <strong>The Killing Blow:</strong> At 1.2 T, a calcium ion gains 4.1e-4 eV against 2.59e-2 eV thermal energy (10^-4 of the 152 kT hydration barrier). Crossing that barrier requires 1.2e4 T, while the strongest steady field built is 45 T.
+      </p>
+    </div>
+
+    <div class="ledger-card">
+      <div class="ledger-badge">STATUS: DEAD : VECTOR 20 SUB-HYPOTHESIS</div>
+      <h3 style="font-size: 1.1875rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--danger-text);">
+        Dislocation-Core Configurational Entropy for Solid Latent Heat
+      </h3>
+      <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+        <strong>The Killing Blow:</strong> Even at saturation dislocation density (10^16 m^-2), dislocation cores occupy under 0.1% of crystal volume, capping latent heat at 0.055 kJ/kg (3,300x short of 180 kJ/kg). Replaced by Cooperative Spin-Crossover (EXP-009).
       </p>
     </div>
   </section>
 
-  <!-- Research Protocol -->
   <section id="protocol" class="section">
     <div class="section-header">
-      <div class="section-tag">Governance & Anti-Hedge Rules</div>
+      <div class="section-tag">Governance &amp; Anti-Hedge Rules</div>
       <h2 class="section-title">The Hard Locks: RESEARCH_PROTOCOL.md</h2>
       <p class="section-desc">
-        Discovery intelligence is constrained by mathematical logic, conservation laws, and experimental falsification rather than consensus.
+        Every new candidate is constrained by conservation laws, dimensional checks, and automated CI verification.
       </p>
     </div>
 
@@ -995,97 +1270,215 @@
       <div class="protocol-item">
         <div class="protocol-num">LOCK 01</div>
         <div class="protocol-name">Falsification First</div>
-        <p class="protocol-text">
-          Every surviving hypothesis defines the exact quantitative observation that kills it before the mechanism is presented. A broken mechanism cannot hide behind narrative.
-        </p>
+        <p class="protocol-text">Every hypothesis defines the exact quantitative observation that kills it before presenting the mechanism.</p>
       </div>
-
       <div class="protocol-item">
         <div class="protocol-num">LOCK 02</div>
         <div class="protocol-name">Magnitude Obligation</div>
-        <p class="protocol-text">
-          Every quantitative claim requires an exact number, a derived order-of-magnitude estimate, or an explicit stated reason numbers are unavailable. No silent vagueness.
-        </p>
+        <p class="protocol-text">Every claim requires an exact number, an order-of-magnitude derivation, or a stated calculation boundary.</p>
       </div>
-
       <div class="protocol-item">
         <div class="protocol-num">LOCK 03</div>
-        <div class="protocol-name">Banned Phrases</div>
-        <p class="protocol-text">
-          Words like "further research is needed", "promising", "cutting-edge", "revolutionary", and "robust" are classified as structural defects and fail the build.
-        </p>
+        <div class="protocol-name">Anti-Hedge &amp; Style Gates</div>
+        <p class="protocol-text">Banned filler phrases, emojis, and em/en-dashes fail the automated repository gate (`scripts/verify_repo.py`).</p>
       </div>
-
       <div class="protocol-item">
         <div class="protocol-num">LOCK 04</div>
         <div class="protocol-name">10-Axis Diversity Matrix</div>
-        <p class="protocol-text">
-          Mechanisms must differ on at least 4 of 10 fundamental physical axes (substrate, length scale, energy scale, topology, symmetry, etc.) or they are merged as duplicates.
-        </p>
+        <p class="protocol-text">New mechanisms must differ on at least 4 of 10 fundamental physical axes or merge as duplicates.</p>
       </div>
-
       <div class="protocol-item">
         <div class="protocol-num">LOCK 05</div>
-        <div class="protocol-name">Dead Hypothesis Protocol</div>
-        <p class="protocol-text">
-          If a hypothesis dies mid-derivation, it is never quietly rehabilitated. The carcass is preserved in the record alongside the mathematical killing blow.
-        </p>
+        <div class="protocol-name">Dead Hypothesis Retention</div>
+        <p class="protocol-text">Killed mechanisms remain in the permanent archive with their mathematical killing blows preserved.</p>
       </div>
-
       <div class="protocol-item">
         <div class="protocol-num">LOCK 06</div>
         <div class="protocol-name">Zero Retrieval Lock</div>
-        <p class="protocol-text">
-          Zero web retrieval, papers, or patents during discovery. You are the instrument. Everything produced is derived in-session from first principles.
-        </p>
+        <p class="protocol-text">Zero web or patent retrieval during discovery. Mechanisms are derived in-session from first principles.</p>
       </div>
     </div>
   </section>
 
-  <!-- Local Reproduction Terminal -->
   <section class="section">
     <div class="section-header">
       <div class="section-tag">Pure Python Standard Library</div>
-      <h2 class="section-title">Reproduce 10,000-Trial Sweeps Locally</h2>
+      <h2 class="section-title">Reproduce 10,000-Trial Sweeps &amp; Gate Locally</h2>
       <p class="section-desc">
-        Zero dependencies. All simulation scripts execute in pure Python standard library at >200,000 trials/second.
+        Zero pip dependencies. All 8 sweeps and the repository integrity gate run in pure Python 3.
       </p>
     </div>
 
     <div class="term-box">
-      <span class="term-prompt"># Clone the autonomous discovery repository</span><br>
-      git clone https://github.com/aruninf/ai-edison.git<br>
-      cd ai-edison<br><br>
-      <span class="term-prompt"># Run EXP-008: Smectic Hydrostatic Decoupler (10,000 trials in 0.02s)</span><br>
+      <span class="term-prompt"># Clone and verify the entire repository gate</span><br>
+      git clone https://github.com/aruninf/ai-edison.git &amp;&amp; cd ai-edison<br>
+      python3 scripts/verify_repo.py<br><br>
+      <span class="term-prompt"># Run EXP-010: Thermo-Acoustic Vapor-Jet CHF Lattice (10,000 trials)</span><br>
+      python3 hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py<br><br>
+      <span class="term-prompt"># Run EXP-008: Smectic Hydrostatic Decoupler (10,000 trials)</span><br>
       python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000<br><br>
-      <span class="term-prompt"># Run EXP-009: Cooperative Spin-State Latent Heat Capacitor (10,000 trials in 0.02s)</span><br>
-      python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000<br><br>
-      <span class="term-prompt"># Run EXP-003: Chiral-Cosserat Static Mechanical Diode (10,000 trials in 0.02s)</span><br>
-      python3 hypotheses/simulations/exp003_mechanical_diode_sweep.py 10000
+      <span class="term-prompt"># Run EXP-009: Cooperative Spin-State Latent Heat Capacitor (10,000 trials)</span><br>
+      python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div>
-      <strong>Autonomous Discovery Intelligence</strong> : Open Science License (MIT)<br>
+      <strong>AI Edison : Autonomous Discovery Intelligence</strong> (MIT License)<br>
       <span>Formulated by Arun Kumar : Infinite Research</span>
     </div>
 
     <div class="footer-links">
       <a href="https://github.com/aruninf/ai-edison" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/aruninf/ai-edison/blob/main/DISCOVERY_COMPENDIUM.md" target="_blank" rel="noopener">Compendium</a>
+      <a href="https://github.com/aruninf/ai-edison/blob/main/directions/README.md" target="_blank" rel="noopener">77-Vector Catalog</a>
+      <a href="https://github.com/aruninf/ai-edison/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
       <a href="https://github.com/aruninf/ai-edison/blob/main/RESEARCH_PROTOCOL.md" target="_blank" rel="noopener">Protocol</a>
-      <a href="https://github.com/aruninf/ai-edison/blob/main/CITATION.cff" target="_blank" rel="noopener">Citation</a>
       <a href="https://colab.research.google.com/github/aruninf/ai-edison/blob/main/notebooks/run_all_sweeps.ipynb" target="_blank" rel="noopener">Colab</a>
     </div>
   </footer>
 
-  <!-- Interactive Simulator Engine JS -->
   <script>
-    let currentMode = 'sthd';
+    const REPO_BASE = "https://github.com/aruninf/ai-edison/blob/main/directions/";
+
+    const VECTORS = [
+      [1, "Environmental-Gradient Machines", "Energy", "Live", "01-environmental-gradient-machines.md"],
+      [2, "Material-Based Computation", "Methodology", "Live", "02-material-based-computation.md"],
+      [3, "Integrated Physical Machines", "Methodology", "Live", "03-integrated-physical-machines.md"],
+      [4, "Dissipative Thermodynamic Logic", "Methodology", "Live", "04-dissipative-thermodynamic-logic.md"],
+      [5, "Monolithic Transduction Lattices", "Methodology", "Live", "05-monolithic-transduction-lattices.md"],
+      [6, "Adversarial Physical Falsification", "Methodology", "Live", "06-adversarial-physical-falsification.md"],
+      [7, "Transpiration & Cavitation Metamaterials", "Energy", "Live", "07-transpiration-cavitation-metamaterials.md"],
+      [8, "Abiotic Solid-State Mass Migration Lattices", "Mechanics", "Live", "08-abiotic-mass-migration-lattices.md"],
+      [9, "Momentum-to-Vorticity Metamaterials", "Mechanics", "Live", "09-momentum-to-vorticity-metamaterials.md"],
+      [10, "Topological Entropic Refrigeration", "Thermal", "Live", "10-topological-entropic-refrigeration.md"],
+      [11, "Non-Oscillatory Absolute Chrono-Metamaterials", "Methodology", "Live", "11-non-oscillatory-chrono-metamaterials.md"],
+      [12, "Static Mechanical Diodes (Non-Betti Force Rectifiers)", "Mechanics", "Live", "12-static-mechanical-diode.md"],
+      [13, "Mechanochemical Self-Squeezing Vapor Engines", "Energy", "Live", "13-mechanochemical-vapor-engines.md"],
+      [14, "Abiotic Mechanocatalytic Carbon-Mineralization", "Energy", "Live", "14-abiotic-mechanocatalytic-mineralization.md"],
+      [15, "Toroidal Liquid-Bearing Surfaces", "Fluidics", "Live", "15-toroidal-liquid-bearing-surfaces.md"],
+      [16, "Coherent Phonon-Inversion Foundations", "Mechanics", "Live", "16-coherent-phonon-inversion-foundations.md"],
+      [17, "Monolithic Flexogalvanic Solid-State Redox Engines", "Energy", "Live", "17-flexogalvanic-redox-engines.md"],
+      [18, "Topological Acoustic Soliton Flywheels", "Mechanics", "Live", "18-topological-acoustic-soliton-flywheels.md"],
+      [19, "Smectic Topological Hydrostatic Decouplers", "Fluidics", "Live", "19-smectic-hydrostatic-decouplers.md"],
+      [20, "Cooperative Spin-State Latent Heat Capacitors", "Thermal", "Live", "20-dislocation-latent-heat-capacitors.md"],
+      [21, "Phonon-Poiseuille Thermal Conduits", "Thermal", "Wounded", "21-phonon-poiseuille-thermal-conduits.md"],
+      [22, "Crystallization-Pressure Prestress Lattices", "Mechanics", "Wounded", "22-crystallization-pressure-prestress.md"],
+      [23, "Critical-Casimir Tunable Springs", "Quantum", "Wounded", "23-critical-casimir-tunable-springs.md"],
+      [24, "Loss-Gradient Vibration Concentrators", "Mechanics", "Wounded", "24-loss-gradient-vibration-concentrators.md"],
+      [25, "Thermoradiative Night Cells", "Thermal", "Wounded", "25-29-second-divergent-pass.md"],
+      [26, "Anisotropic-Expansion Peristaltic Pump", "Fluidics", "Wounded", "25-29-second-divergent-pass.md"],
+      [27, "Ice-Bonded Reversible Joints", "Fluidics", "Live", "25-29-second-divergent-pass.md"],
+      [28, "Capillary-Condensation Thermal Switches", "Thermal", "Live", "25-29-second-divergent-pass.md"],
+      [29, "Recoverable Prestress", "Mechanics", "Wounded", "25-29-second-divergent-pass.md"],
+      [30, "Quasicrystalline Superlubricity Interface", "Mechanics", "Live", "30-quasicrystalline-superlubricity-interface.md"],
+      [31, "Anharmonic Phonon-Upconverting Thermal Diode", "Thermal", "Live", "31-anharmonic-phonon-thermal-diode.md"],
+      [32, "Cryo-Expansion Snap-Ejection Metamaterial", "Mechanics", "Live", "32-cryo-expansion-snap-deicing.md"],
+      [33, "Mechanocatalytic Wave-Impact Hydrogen Seawall", "Energy", "Live", "33-wave-impact-hydrogen-seawall.md"],
+      [34, "All-Covalent Topo-Orbital Valence Battery", "Energy", "Live", "34-all-covalent-orbital-battery.md"],
+      [35, "Abiotic Transpiration Hydraulic Ram", "Fluidics", "Live", "35-transpiration-hydraulic-ram.md"],
+      [36, "Non-Archimedean Orientation-Bistable Buoyancy", "Fluidics", "Live", "36-non-archimedean-buoyancy-inversion.md"],
+      [37, "Stable Negative-Bulk-Modulus Metamaterial", "Mechanics", "Live", "37-stable-negative-bulk-modulus.md"],
+      [38, "Non-Pascalian Hydrostatic Shear-Freezing", "Fluidics", "Live", "38-non-pascalian-shear-freezing.md"],
+      [39, "Abiotic Uphill-Diffusion Lattice", "Energy", "Live", "39-abiotic-uphill-diffusion-lattice.md"],
+      [40, "Hydrophobic-Confinement Retrograde Freezing", "Thermal", "Live", "40-hydrophobic-retrograde-freezing.md"],
+      [41, "Abiotic Flexoelectric Viscosity Inversion", "Fluidics", "Live", "41-flexoelectric-viscosity-inversion.md"],
+      [42, "Resonant Gravitational-Quadrupole Harvester", "Quantum", "Live", "42-gravitational-quadrupole-harvester.md"],
+      [43, "Static Magnetostatic Topological Anapole", "Quantum", "Live", "43-magnetostatic-topological-anapole.md"],
+      [44, "Sub-THz Mitochondrial Bioenergetic Synchronizer", "Medicine", "Live", "44-mitochondrial-sub-thz-synchronizer.md"],
+      [45, "Cosmic-Ray Delta-Electron Trapping Metamaterial", "Medicine", "Live", "45-cosmic-ray-delta-electron-trap.md"],
+      [46, "Non-Hermitian Chiral Zero-Noise Resistor", "Quantum", "Live", "46-non-hermitian-zero-noise-resistor.md"],
+      [47, "Sub-Debye Topological Electrostatic Conduit", "Quantum", "Live", "47-sub-debye-electrostatic-conduit.md"],
+      [48, "Topological Chromatin Unknotting Resonator", "Medicine", "Live", "48-topological-chromatin-unknotting-resonator.md"],
+      [49, "Sub-Femtosecond Cavity-Polariton Radioprotector", "Medicine", "Live", "49-sub-femtosecond-radiolytic-cleavage-suppressor.md"],
+      [50, "Sub-Critical Condensate Pit Lattice", "Medicine", "Live", "50-sub-critical-condensate-pit-lattice.md"],
+      [51, "Coincidence-Gated Sub-Threshold Acoustic Ablation", "Medicine", "Live", "51-coincidence-gated-acoustic-ablation.md"],
+      [52, "Mesh-Pinned Ice Recrystallization Arrest", "Medicine", "Live", "52-mesh-pinned-ice-recrystallization-arrest.md"],
+      [53, "Field-Driven Epitaxial Enamel Reconstruction", "Medicine", "Live", "53-field-driven-epitaxial-enamel-reconstruction.md"],
+      [54, "Interfacial Microdischarge Nitrogen Fixation", "Energy", "Live", "54-interfacial-microdischarge-nitrogen-fixation.md"],
+      [55, "Resonant Mechano-Bactericidal Pillar Array", "Medicine", "Live", "55-resonant-mechano-bactericidal-pillar-array.md"],
+      [56, "Hot-Carrier Extraction Beyond Shockley-Queisser", "Dead", "Dead", "56-hot-carrier-extraction-dead.md"],
+      [57, "Pressure-Gated Molecular Thermal Switch", "Thermal", "Live", "57-pressure-gated-molecular-thermal-switch.md"],
+      [58, "Thermo-Osmotic Liquid-State Drying", "Thermal", "Wounded", "58-thermo-osmotic-liquid-drying.md"],
+      [59, "Air-Handler Ceiling on Direct Air Capture", "Energy", "Live", "59-air-handler-ceiling-direct-air-capture.md"],
+      [60, "Magnetic Scale Prevention", "Dead", "Dead", "60-magnetic-scale-prevention-dead.md"],
+      [61, "Chiral-Topological Spin-Gated Water Engine", "Energy", "Live", "61-chiral-topological-spin-gated-water-engine.md"],
+      [62, "Axonal MPS Acousto-Electric Soliton Resonator", "Medicine", "Live", "62-axonal-mps-acousto-electric-soliton-resonator.md"],
+      [63, "Acoustically Pinned Dislocation-Creep Freeze", "Energy", "Live", "63-acoustically-pinned-dislocation-creep-freeze.md"],
+      [64, "Phonon-Polariton Ballistic Heat Shunt", "Thermal", "Live", "64-phonon-polariton-ballistic-heat-shunt.md"],
+      [65, "Anharmonic Phonon-Rectified Isotope Sieve", "Energy", "Live", "65-anharmonic-phonon-rectified-isotope-sieve.md"],
+      [66, "Supramolecular Desolvation Thermogalvanic Harvester", "Energy", "Live", "66-supramolecular-desolvation-thermogalvanic-harvester.md"],
+      [67, "Non-Invasive Chiral-Polariton Glucose Monitor", "Medicine", "Live", "67-non-invasive-chiral-polariton-glucose-monitor.md"],
+      [68, "Ambient Zwitterionic Hydration-Shell Biologic Preserver", "Medicine", "Live", "68-ambient-zwitterionic-hydration-shell-vaccine-preserver.md"],
+      [69, "Capillary Multi-Stage Latent-Heat Desalinator", "Fluidics", "Live", "69-capillary-multistage-latent-heat-desalinator.md"],
+      [70, "Non-Invasive Cranial Compliance Waveguide", "Medicine", "Live", "70-non-invasive-cranial-compliance-waveguide.md"],
+      [71, "Whispering-Gallery Rayleigh Lithotripsy", "Medicine", "Live", "71-whispering-gallery-rayleigh-lithotripsy.md"],
+      [72, "Bilateral Microwave Stroke Differentiator", "Medicine", "Live", "72-bilateral-microwave-stroke-differentiator.md"],
+      [73, "Donnan-Gated Dual-Atom Wearable Artificial Kidney", "Medicine", "Live", "73-donnan-gated-electrocatalytic-wearable-kidney.md"],
+      [74, "Resonant Shear-Decoupling of Microcalcifications", "Medicine", "Live", "74-resonant-shear-unpinning-vascular-calcification.md"],
+      [75, "Repulsive Vacuum-Casimir Topological Bearing", "Mechanics", "Live", "75-repulsive-vacuum-casimir-topological-bearing.md"],
+      [76, "Chiral Phononic Flat-Band Thermal Super-Insulator", "Thermal", "Live", "76-chiral-phononic-flat-band-super-insulator.md"],
+      [77, "Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice", "Thermal", "Live", "77-thermo-acoustic-vapor-jet-chf-lattice.md"]
+    ];
+
+    let activeCategory = "all";
+    let searchTerm = "";
+
+    function renderCatalog() {
+      const grid = document.getElementById("catalog-grid");
+      const countEl = document.getElementById("explorer-count");
+      const q = searchTerm.trim().toLowerCase();
+
+      const filtered = VECTORS.filter(([num, title, cat, status]) => {
+        const matchCat = activeCategory === "all" || cat === activeCategory;
+        const matchText = !q || title.toLowerCase().includes(q) || cat.toLowerCase().includes(q) || status.toLowerCase().includes(q) || String(num).padStart(2, "0").includes(q);
+        return matchCat && matchText;
+      });
+
+      countEl.innerText = `Showing ${filtered.length} of ${VECTORS.length} vectors`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1 / -1; padding: 2rem; text-align: center; color: var(--text-muted); border: 1px solid var(--border-hairline); border-radius: var(--radius-md);">No vectors match "${q}". Clear the search or select another domain.</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(([num, title, cat, status, file]) => {
+        const numStr = String(num).padStart(2, "0");
+        const statusCls = status === "Live" ? "status-live" : status === "Wounded" ? "status-wounded" : "status-dead";
+        return `
+          <a class="vec-item" href="${REPO_BASE}${file}" target="_blank" rel="noopener">
+            <div class="vec-top">
+              <span class="vec-num">VECTOR ${numStr}</span>
+              <span class="status-pill ${statusCls}">${status.toUpperCase()}</span>
+            </div>
+            <div class="vec-title">${title}</div>
+            <div class="vec-meta">
+              <span>${cat}</span>
+              <span>Open Dossier -&gt;</span>
+            </div>
+          </a>
+        `;
+      }).join("");
+    }
+
+    document.querySelectorAll(".pill-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".pill-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeCategory = btn.getAttribute("data-cat");
+        renderCatalog();
+      });
+    });
+
+    document.getElementById("vec-search").addEventListener("input", (e) => {
+      searchTerm = e.target.value;
+      renderCatalog();
+    });
+
+    // Interactive Multi-Physics Simulator
+    let currentMode = "chf";
 
     const simState = {
+      chf: { dTb: 44, dNozzle: 131, diodicity: 3.0 },
       sthd: { height: 100, radius: 0.025, modulus: 25 },
       diode: { forwardForce: 250, chirality: 35 },
       spin: { tempC: 78, phononRatio: 1.6 }
@@ -1093,131 +1486,136 @@
 
     function setSimMode(mode) {
       currentMode = mode;
-      document.querySelectorAll('.sim-tab').forEach(tab => {
-        tab.classList.remove('active');
-        tab.setAttribute('aria-selected', 'false');
+      document.querySelectorAll(".sim-tab").forEach(tab => {
+        tab.classList.remove("active");
+        tab.setAttribute("aria-selected", "false");
       });
-      document.getElementById('tab-' + mode).classList.add('active');
-      document.getElementById('tab-' + mode).setAttribute('aria-selected', 'true');
+      document.getElementById("tab-" + mode).classList.add("active");
+      document.getElementById("tab-" + mode).setAttribute("aria-selected", "true");
       renderControls();
       updateSimulation();
     }
 
     function renderControls() {
-      const container = document.getElementById('sim-controls-container');
-      if (currentMode === 'sthd') {
+      const container = document.getElementById("sim-controls-container");
+      if (currentMode === "chf") {
+        container.innerHTML = `
+          <div class="control-group">
+            <div class="control-header">
+              <span>Base Wall Superheat (dT_b)</span>
+              <span class="control-val" id="val-dTb">${simState.chf.dTb} K</span>
+            </div>
+            <input type="range" min="10" max="45" step="1" value="${simState.chf.dTb}" oninput="updateParam('chf', 'dTb', this.value)">
+          </div>
+
+          <div class="control-group">
+            <div class="control-header">
+              <span>Nozzle Diameter (d_n)</span>
+              <span class="control-val" id="val-dNozzle">${simState.chf.dNozzle} um</span>
+            </div>
+            <input type="range" min="50" max="150" step="1" value="${simState.chf.dNozzle}" oninput="updateParam('chf', 'dNozzle', this.value)">
+          </div>
+
+          <div class="control-group">
+            <div class="control-header">
+              <span>Tesla Artery Diodicity (Di)</span>
+              <span class="control-val" id="val-diodicity">${simState.chf.diodicity.toFixed(1)}</span>
+            </div>
+            <input type="range" min="1.5" max="4.5" step="0.1" value="${simState.chf.diodicity}" oninput="updateParam('chf', 'diodicity', this.value)">
+          </div>
+
+          <div class="sim-metrics">
+            <div>
+              <div class="metric-sub">Sustained CHF</div>
+              <div class="metric-val highlight" id="chf-q">33.6 MW/m^2</div>
+            </div>
+            <div>
+              <div class="metric-sub">vs Kutateladze-Zuber</div>
+              <div class="metric-val highlight" id="chf-ratio">30.3x</div>
+            </div>
+            <div>
+              <div class="metric-sub">Vapor Jet Velocity</div>
+              <div class="metric-val" id="chf-vv">215.4 m/s</div>
+            </div>
+            <div>
+              <div class="metric-sub">Jet Weber Number</div>
+              <div class="metric-val" id="chf-we">61.7</div>
+            </div>
+          </div>
+        `;
+      } else if (currentMode === "sthd") {
         container.innerHTML = `
           <div class="control-group">
             <div class="control-header">
               <span>Column Height (h)</span>
-              <span class="control-val" id="val-h">${simState.sthd.height} m</span>
+              <span class="control-val" id="val-height">${simState.sthd.height} m</span>
             </div>
             <input type="range" min="10" max="150" step="1" value="${simState.sthd.height}" oninput="updateParam('sthd', 'height', this.value)">
           </div>
-
           <div class="control-group">
             <div class="control-header">
               <span>Conduit Radius (R)</span>
-              <span class="control-val" id="val-r">${simState.sthd.radius * 1000} mm</span>
+              <span class="control-val" id="val-radius">${Math.round(simState.sthd.radius * 1000)} mm</span>
             </div>
             <input type="range" min="10" max="60" step="1" value="${simState.sthd.radius * 1000}" oninput="updateParam('sthd', 'radius', this.value / 1000)">
           </div>
-
           <div class="control-group">
             <div class="control-header">
               <span>Smectic Modulus (B)</span>
-              <span class="control-val" id="val-b">${simState.sthd.modulus} MPa</span>
+              <span class="control-val" id="val-modulus">${simState.sthd.modulus} MPa</span>
             </div>
             <input type="range" min="5" max="50" step="1" value="${simState.sthd.modulus}" oninput="updateParam('sthd', 'modulus', this.value)">
           </div>
-
           <div class="sim-metrics">
-            <div>
-              <div class="metric-sub">Stevin Pressure</div>
-              <div class="metric-val" id="stevin-val">1030 kPa</div>
-            </div>
-            <div>
-              <div class="metric-sub">Smectic Base Pressure</div>
-              <div class="metric-val highlight" id="smectic-val">5.84 kPa</div>
-            </div>
-            <div>
-              <div class="metric-sub">Head Reduction</div>
-              <div class="metric-val highlight" id="reduction-val">99.43%</div>
-            </div>
-            <div>
-              <div class="metric-sub">Transverse Viscosity</div>
-              <div class="metric-val">0.048 Pa*s</div>
-            </div>
+            <div><div class="metric-sub">Stevin Pressure</div><div class="metric-val" id="stevin-val">1030 kPa</div></div>
+            <div><div class="metric-sub">Smectic Base</div><div class="metric-val highlight" id="smectic-val">5.84 kPa</div></div>
+            <div><div class="metric-sub">Head Reduction</div><div class="metric-val highlight" id="reduction-val">99.43%</div></div>
+            <div><div class="metric-sub">Core Viscosity</div><div class="metric-val">0.048 Pa*s</div></div>
           </div>
         `;
-      } else if (currentMode === 'diode') {
+      } else if (currentMode === "diode") {
         container.innerHTML = `
           <div class="control-group">
             <div class="control-header">
               <span>Applied Axial Load (F)</span>
-              <span class="control-val" id="val-f">${simState.diode.forwardForce} N</span>
+              <span class="control-val" id="val-forwardForce">${simState.diode.forwardForce} N</span>
             </div>
             <input type="range" min="10" max="500" step="10" value="${simState.diode.forwardForce}" oninput="updateParam('diode', 'forwardForce', this.value)">
           </div>
-
           <div class="control-group">
             <div class="control-header">
               <span>Chiral Ligament Angle</span>
-              <span class="control-val" id="val-angle">${simState.diode.chirality}&deg;</span>
+              <span class="control-val" id="val-chirality">${simState.diode.chirality} deg</span>
             </div>
             <input type="range" min="20" max="45" step="1" value="${simState.diode.chirality}" oninput="updateParam('diode', 'chirality', this.value)">
           </div>
-
           <div class="sim-metrics">
-            <div>
-              <div class="metric-sub">Forward Transmission</div>
-              <div class="metric-val highlight">99.6%</div>
-            </div>
-            <div>
-              <div class="metric-sub">Backward Transmission</div>
-              <div class="metric-val highlight">0.00%</div>
-            </div>
-            <div style="grid-column: span 2;">
-              <div class="metric-sub">Rectification Ratio (Rfwd / Rbwd)</div>
-              <div class="metric-val highlight">20,144 : 1</div>
-            </div>
+            <div><div class="metric-sub">Forward Transmission</div><div class="metric-val highlight">99.6%</div></div>
+            <div><div class="metric-sub">Backward Transmission</div><div class="metric-val highlight">0.00%</div></div>
+            <div style="grid-column: span 2;"><div class="metric-sub">Rectification Ratio</div><div class="metric-val highlight">20,144 : 1</div></div>
           </div>
         `;
-      } else if (currentMode === 'spin') {
+      } else if (currentMode === "spin") {
         container.innerHTML = `
           <div class="control-group">
             <div class="control-header">
               <span>Transition Temp (Tc)</span>
-              <span class="control-val" id="val-tc">${simState.spin.tempC} &deg;C</span>
+              <span class="control-val" id="val-tempC">${simState.spin.tempC} C</span>
             </div>
             <input type="range" min="30" max="110" step="1" value="${simState.spin.tempC}" oninput="updateParam('spin', 'tempC', this.value)">
           </div>
-
           <div class="control-group">
             <div class="control-header">
               <span>Phonon Softening (w_LS / w_HS)</span>
-              <span class="control-val" id="val-pr">${simState.spin.phononRatio}</span>
+              <span class="control-val" id="val-phononRatio">${simState.spin.phononRatio}</span>
             </div>
             <input type="range" min="1.1" max="2.2" step="0.05" value="${simState.spin.phononRatio}" oninput="updateParam('spin', 'phononRatio', this.value)">
           </div>
-
           <div class="sim-metrics">
-            <div>
-              <div class="metric-sub">Latent Heat Density</div>
-              <div class="metric-val highlight" id="spin-heat">351.6 kJ/kg</div>
-            </div>
-            <div>
-              <div class="metric-sub">Volumetric Capacity</div>
-              <div class="metric-val highlight" id="spin-vol">492.2 MJ/m^3</div>
-            </div>
-            <div>
-              <div class="metric-sub">Thermal Hysteresis</div>
-              <div class="metric-val">0.20 K</div>
-            </div>
-            <div>
-              <div class="metric-sub">Bulk Phase Expansion</div>
-              <div class="metric-val">&lt; 0.05%</div>
-            </div>
+            <div><div class="metric-sub">Latent Heat Density</div><div class="metric-val highlight" id="spin-heat">351.6 kJ/kg</div></div>
+            <div><div class="metric-sub">Volumetric Capacity</div><div class="metric-val highlight" id="spin-vol">492.2 MJ/m^3</div></div>
+            <div><div class="metric-sub">Thermal Hysteresis</div><div class="metric-val">0.20 K</div></div>
+            <div><div class="metric-sub">Phase Expansion</div><div class="metric-val">&lt; 0.05%</div></div>
           </div>
         `;
       }
@@ -1225,114 +1623,181 @@
 
     function updateParam(mode, param, val) {
       simState[mode][param] = parseFloat(val);
-      const valEl = document.getElementById(`val-${param.charAt(0)}`);
+      const valEl = document.getElementById("val-" + param);
       if (valEl) {
-        if (param === 'height') valEl.innerText = `${val} m`;
-        if (param === 'radius') valEl.innerText = `${Math.round(val * 1000)} mm`;
-        if (param === 'modulus') valEl.innerText = `${val} MPa`;
-        if (param === 'forwardForce') valEl.innerText = `${val} N`;
-        if (param === 'chirality') valEl.innerText = `${val}°`;
-        if (param === 'tempC') valEl.innerText = `${val} °C`;
-        if (param === 'phononRatio') valEl.innerText = `${val}`;
+        if (param === "dTb") valEl.innerText = `${val} K`;
+        if (param === "dNozzle") valEl.innerText = `${val} um`;
+        if (param === "diodicity") valEl.innerText = `${parseFloat(val).toFixed(1)}`;
+        if (param === "height") valEl.innerText = `${val} m`;
+        if (param === "radius") valEl.innerText = `${Math.round(val * 1000)} mm`;
+        if (param === "modulus") valEl.innerText = `${val} MPa`;
+        if (param === "forwardForce") valEl.innerText = `${val} N`;
+        if (param === "chirality") valEl.innerText = `${val} deg`;
+        if (param === "tempC") valEl.innerText = `${val} C`;
+        if (param === "phononRatio") valEl.innerText = `${val}`;
       }
       updateSimulation();
     }
 
-    function updateSimulation() {
-      const chartEl = document.getElementById('chart-container');
-      const titleEl = document.getElementById('chart-title');
+    function evalCHF(dTb, dNozzleUm, diodicity) {
+      const pitch = 251.3e-6;
+      const hWall = 437.6e-6;
+      const dArtery = 105.1e-6;
+      const dn = dNozzleUm * 1e-6;
+      const A_cell = pitch * pitch;
+      const phi_v = (0.25 * Math.PI * dn * dn) / A_cell;
+      const phi_s = 1 - phi_v;
+      const R_cond = hWall / (385.0 * phi_s);
+      const d_c = 0.65 * pitch;
+      const A_evap_ratio = (Math.PI * d_c * (0.6 * hWall) + 0.25 * Math.PI * d_c * d_c) / A_cell;
+      const R_evap = 0.65e-6 / (0.679 * A_evap_ratio);
+      const dP_dT = (2.257e6 * 0.598) / 373.15;
+      const K_loss = 2.4 + 0.05 * (hWall / dn);
+      const v_cap = 215.4;
+      const L_art = 0.5 * pitch;
+      const A_art = 2.0 * 0.25 * Math.PI * dArtery * dArtery;
+      const dP_cap = (4 * 0.0589 * Math.cos(35 * Math.PI / 180)) / dArtery;
+      const R_visc = (32 * 2.82e-4 * L_art) / (dArtery * dArtery);
 
-      if (currentMode === 'sthd') {
-        titleEl.innerText = 'Hydrostatic Pressure vs. Column Depth';
+      let dTi = 0.7 * dTb;
+      let q = 0;
+      let v_v = 0;
+      for (let i = 0; i < 12; i++) {
+        const dP = Math.max(0, dP_dT * dTi);
+        v_v = Math.min(Math.sqrt((2 * dP) / (0.598 * K_loss)), v_cap);
+        const q_vap = 0.598 * v_v * phi_v * 2.257e6;
+        const dP_liq = dP_cap + 0.15 * dP * (1 - 1 / diodicity);
+        const a_q = 0.5 * 1.8 * 958.4;
+        const v_l = (-R_visc + Math.sqrt(Math.max(0, R_visc * R_visc + 4 * a_q * dP_liq))) / (2 * a_q);
+        const q_liq = ((958.4 * v_l * A_art) / A_cell) * 2.257e6;
+        const q_mic = Math.max(0, dTi / R_evap);
+        const q_new = Math.min(q_vap, q_liq, q_mic);
+        dTi = 0.5 * dTi + 0.5 * Math.max(0.5, dTb - q_new * R_cond);
+        q = q_new;
+      }
+      const We = (0.598 * v_v * v_v * dn) / 0.0589;
+      return { qMW: q / 1e6, ratio: q / 1.109e6, vv: v_v, We };
+    }
+
+    function updateSimulation() {
+      const chartEl = document.getElementById("chart-container");
+      const titleEl = document.getElementById("chart-title");
+      const badgeEl = document.getElementById("chart-badge");
+
+      if (currentMode === "chf") {
+        titleEl.innerText = "Critical Heat Flux vs. Base Wall Superheat";
+        badgeEl.innerText = "Kutateladze-Zuber vs. TAVJ-DL";
+        const { dTb, dNozzle, diodicity } = simState.chf;
+        const res = evalCHF(dTb, dNozzle, diodicity);
+        document.getElementById("chf-q").innerText = `${res.qMW.toFixed(2)} MW/m^2`;
+        document.getElementById("chf-ratio").innerText = `${res.ratio.toFixed(1)}x`;
+        document.getElementById("chf-vv").innerText = `${res.vv.toFixed(1)} m/s`;
+        document.getElementById("chf-we").innerText = `${res.We.toFixed(1)}`;
+
+        const maxQ = 36;
+        let pts = [];
+        for (let t = 5; t <= 45; t += 2) {
+          const r = evalCHF(t, dNozzle, diodicity);
+          const x = 50 + ((t - 5) / 40) * 430;
+          const y = 200 - Math.min(1, r.qMW / maxQ) * 180;
+          pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+        }
+        const curX = 50 + ((dTb - 5) / 40) * 430;
+        const curY = 200 - Math.min(1, res.qMW / maxQ) * 180;
+        const kzY = 200 - (1.109 / maxQ) * 180;
+
+        chartEl.innerHTML = `
+          <svg viewBox="0 0 500 240" style="width: 100%; height: 100%; overflow: visible;">
+            <line x1="50" y1="20" x2="480" y2="20" stroke="#1e2436" stroke-width="1"/>
+            <line x1="50" y1="110" x2="480" y2="110" stroke="#1e2436" stroke-width="1"/>
+            <line x1="50" y1="200" x2="480" y2="200" stroke="#333f54" stroke-width="1.5"/>
+            <line x1="50" y1="20" x2="50" y2="200" stroke="#333f54" stroke-width="1.5"/>
+            <text x="50" y="220" fill="#78849e" font-size="11" font-family="monospace">5 K</text>
+            <text x="260" y="220" fill="#78849e" font-size="11" font-family="monospace">25 K</text>
+            <text x="455" y="220" fill="#78849e" font-size="11" font-family="monospace">45 K</text>
+            <text x="42" y="204" fill="#78849e" font-size="11" font-family="monospace" text-anchor="end">0</text>
+            <text x="42" y="25" fill="#78849e" font-size="11" font-family="monospace" text-anchor="end">36 MW</text>
+            <line x1="50" y1="${kzY.toFixed(1)}" x2="480" y2="${kzY.toFixed(1)}" stroke="#fca5a5" stroke-width="2" stroke-dasharray="4,4"/>
+            <text x="340" y="${(kzY - 7).toFixed(1)}" fill="#fca5a5" font-size="11" font-weight="600">KZ Limit: 1.11 MW/m^2</text>
+            <polyline points="${pts.join(" ")}" fill="none" stroke="#34d399" stroke-width="3"/>
+            <circle cx="${curX.toFixed(1)}" cy="${curY.toFixed(1)}" r="5" fill="#60a5fa" stroke="#ffffff" stroke-width="1.5"/>
+            <text x="${Math.min(365, curX + 10).toFixed(1)}" y="${Math.max(35, curY - 10).toFixed(1)}" fill="#34d399" font-size="11" font-weight="700" font-family="monospace">${res.qMW.toFixed(1)} MW/m^2</text>
+          </svg>
+        `;
+      } else if (currentMode === "sthd") {
+        titleEl.innerText = "Hydrostatic Pressure vs. Column Depth";
+        badgeEl.innerText = "Stevin vs. Smectic-A";
         const h = simState.sthd.height;
         const R = simState.sthd.radius;
         const B = simState.sthd.modulus * 1e6;
         const rho = 1050;
         const g = 9.80665;
-        const K1 = 1e-11;
-        const lambda_s = Math.sqrt(K1 / B);
-        const lambda_eff = Math.max(0.001, lambda_s * 3.5e6);
-
+        const lambda_eff = Math.max(0.001, Math.sqrt(1e-11 / B) * 3.5e6);
         const stevinHead = (rho * g * h) / 1000;
         const P_sat = (rho * g * R) / (2 * lambda_eff) / 1000;
-        const smecticP = P_sat * (1 - Math.exp(- (2 * lambda_eff * h) / R));
+        const smecticP = P_sat * (1 - Math.exp(-(2 * lambda_eff * h) / R));
         const reduction = ((stevinHead - smecticP) / stevinHead) * 100;
 
-        document.getElementById('stevin-val').innerText = `${stevinHead.toFixed(1)} kPa`;
-        document.getElementById('smectic-val').innerText = `${smecticP.toFixed(2)} kPa`;
-        document.getElementById('reduction-val').innerText = `${reduction.toFixed(2)}%`;
+        document.getElementById("stevin-val").innerText = `${stevinHead.toFixed(1)} kPa`;
+        document.getElementById("smectic-val").innerText = `${smecticP.toFixed(2)} kPa`;
+        document.getElementById("reduction-val").innerText = `${reduction.toFixed(2)}%`;
 
         chartEl.innerHTML = `
           <svg viewBox="0 0 500 240" style="width: 100%; height: 100%; overflow: visible;">
-            <!-- Grid lines -->
-            <line x1="50" y1="20" x2="480" y2="20" stroke="#1d2232" stroke-width="1"/>
-            <line x1="50" y1="75" x2="480" y2="75" stroke="#1d2232" stroke-width="1"/>
-            <line x1="50" y1="130" x2="480" y2="130" stroke="#1d2232" stroke-width="1"/>
-            <line x1="50" y1="185" x2="480" y2="185" stroke="#1d2232" stroke-width="1"/>
+            <line x1="50" y1="20" x2="480" y2="20" stroke="#1e2436" stroke-width="1"/>
+            <line x1="50" y1="110" x2="480" y2="110" stroke="#1e2436" stroke-width="1"/>
             <line x1="50" y1="200" x2="480" y2="200" stroke="#333f54" stroke-width="1.5"/>
             <line x1="50" y1="20" x2="50" y2="200" stroke="#333f54" stroke-width="1.5"/>
-
-            <!-- Axis Labels -->
-            <text x="50" y="220" fill="#647087" font-size="11" font-family="monospace">0m</text>
-            <text x="260" y="220" fill="#647087" font-size="11" font-family="monospace">${(h / 2).toFixed(0)}m</text>
-            <text x="460" y="220" fill="#647087" font-size="11" font-family="monospace">${h}m</text>
-            <text x="40" y="205" fill="#647087" font-size="11" font-family="monospace" text-anchor="end">0 kPa</text>
-            <text x="40" y="25" fill="#647087" font-size="11" font-family="monospace" text-anchor="end">${stevinHead.toFixed(0)}</text>
-
-            <!-- Classical Stevin Line -->
-            <path d="M 50 200 L 480 20" stroke="#f87171" stroke-width="2.5" fill="none" stroke-dasharray="4,4"/>
-            <text x="360" y="45" fill="#f87171" font-size="11" font-weight="600">Stevin (rho*g*h)</text>
-
-            <!-- Smectic Saturation Curve -->
-            <path d="M 50 200 Q 140 196, 480 ${200 - (smecticP / stevinHead) * 180}" stroke="#10b981" stroke-width="3" fill="none"/>
-            <text x="320" y="180" fill="#34d399" font-size="11" font-weight="600">Smectic-A Saturation: ${smecticP.toFixed(1)} kPa</text>
+            <text x="50" y="220" fill="#78849e" font-size="11" font-family="monospace">0m</text>
+            <text x="260" y="220" fill="#78849e" font-size="11" font-family="monospace">${(h / 2).toFixed(0)}m</text>
+            <text x="460" y="220" fill="#78849e" font-size="11" font-family="monospace">${h}m</text>
+            <text x="42" y="205" fill="#78849e" font-size="11" font-family="monospace" text-anchor="end">0</text>
+            <text x="42" y="25" fill="#78849e" font-size="11" font-family="monospace" text-anchor="end">${stevinHead.toFixed(0)} kPa</text>
+            <path d="M 50 200 L 480 20" stroke="#fca5a5" stroke-width="2.5" fill="none" stroke-dasharray="4,4"/>
+            <text x="355" y="45" fill="#fca5a5" font-size="11" font-weight="600">Stevin (rho*g*h)</text>
+            <path d="M 50 200 Q 140 196, 480 ${200 - (smecticP / stevinHead) * 180}" stroke="#34d399" stroke-width="3" fill="none"/>
+            <text x="305" y="180" fill="#34d399" font-size="11" font-weight="600">Smectic-A: ${smecticP.toFixed(1)} kPa</text>
           </svg>
         `;
-      } else if (currentMode === 'diode') {
-        titleEl.innerText = 'Betti Reciprocity Rectification Ratio';
+      } else if (currentMode === "diode") {
+        titleEl.innerText = "Betti Reciprocity Rectification Ratio";
+        badgeEl.innerText = "Chiral Cosserat Lattice";
         chartEl.innerHTML = `
           <svg viewBox="0 0 500 240" style="width: 100%; height: 100%;">
-            <!-- Forward Column -->
-            <rect x="100" y="30" width="100" height="170" rx="4" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" stroke-width="2"/>
-            <text x="150" y="115" fill="#f3f5fa" font-size="20" font-weight="700" text-anchor="middle" font-family="monospace">99.6%</text>
-            <text x="150" y="140" fill="#9aa5bc" font-size="11" text-anchor="middle">Forward Force</text>
-            <text x="150" y="225" fill="#647087" font-size="12" font-weight="600" text-anchor="middle">Port A -&gt; Port B</text>
-
-            <!-- Backward Column -->
-            <rect x="300" y="196" width="100" height="4" rx="2" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="2"/>
-            <text x="350" y="180" fill="#f87171" font-size="20" font-weight="700" text-anchor="middle" font-family="monospace">0.00%</text>
-            <text x="350" y="140" fill="#9aa5bc" font-size="11" text-anchor="middle">Backward Force (Diverted)</text>
-            <text x="350" y="225" fill="#647087" font-size="12" font-weight="600" text-anchor="middle">Port B -&gt; Port A</text>
+            <rect x="100" y="30" width="100" height="170" rx="4" fill="rgba(59, 130, 246, 0.12)" stroke="#3b82f6" stroke-width="2"/>
+            <text x="150" y="115" fill="#f4f6fb" font-size="20" font-weight="700" text-anchor="middle" font-family="monospace">99.6%</text>
+            <text x="150" y="140" fill="#a5b0c7" font-size="11" text-anchor="middle">Forward Force</text>
+            <text x="150" y="225" fill="#78849e" font-size="12" font-weight="600" text-anchor="middle">Port A -&gt; Port B</text>
+            <rect x="300" y="196" width="100" height="4" rx="2" fill="rgba(239, 68, 68, 0.12)" stroke="#ef4444" stroke-width="2"/>
+            <text x="350" y="180" fill="#fca5a5" font-size="20" font-weight="700" text-anchor="middle" font-family="monospace">0.00%</text>
+            <text x="350" y="140" fill="#a5b0c7" font-size="11" text-anchor="middle">Backward Force (Diverted)</text>
+            <text x="350" y="225" fill="#78849e" font-size="12" font-weight="600" text-anchor="middle">Port B -&gt; Port A</text>
           </svg>
         `;
-      } else if (currentMode === 'spin') {
-        titleEl.innerText = 'Cooperative Electronic Spin-Crossover Latent Heat Peak';
+      } else if (currentMode === "spin") {
+        titleEl.innerText = "Cooperative Electronic Spin-Crossover Latent Heat Peak";
+        badgeEl.innerText = "S=0 to S=2 Solid Transition";
         const Tc = simState.spin.tempC + 273.15;
         const R = 8.31446;
-        const S_spin = R * Math.log(5);
-        const S_vib = 3 * R * Math.log(simState.spin.phononRatio);
-        const S_tot = S_spin + S_vib;
-        const M_mol = 0.0553;
-        const dH = (Tc * S_tot) / M_mol / 1000;
+        const S_tot = R * Math.log(5) + 3 * R * Math.log(simState.spin.phononRatio);
+        const dH = (Tc * S_tot) / 0.0553 / 1000;
         const dH_vol = dH * 1.4;
-
-        document.getElementById('spin-heat').innerText = `${dH.toFixed(1)} kJ/kg`;
-        document.getElementById('spin-vol').innerText = `${dH_vol.toFixed(1)} MJ/m^3`;
+        document.getElementById("spin-heat").innerText = `${dH.toFixed(1)} kJ/kg`;
+        document.getElementById("spin-vol").innerText = `${dH_vol.toFixed(1)} MJ/m^3`;
 
         chartEl.innerHTML = `
           <svg viewBox="0 0 500 240" style="width: 100%; height: 100%;">
             <line x1="50" y1="200" x2="480" y2="200" stroke="#333f54" stroke-width="1.5"/>
             <line x1="50" y1="30" x2="50" y2="200" stroke="#333f54" stroke-width="1.5"/>
-
-            <path d="M 60 198 L 220 198 Q 250 198, 260 40 Q 270 198, 300 198 L 470 198" stroke="#10b981" stroke-width="3" fill="rgba(16, 185, 129, 0.1)"/>
+            <path d="M 60 198 L 220 198 Q 250 198, 260 40 Q 270 198, 300 198 L 470 198" stroke="#34d399" stroke-width="3" fill="rgba(16, 185, 129, 0.1)"/>
             <text x="260" y="30" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle" font-family="monospace">Isothermal Peak: ${dH.toFixed(1)} kJ/kg</text>
-            <text x="260" y="225" fill="#647087" font-size="11" text-anchor="middle" font-family="monospace">T_c = ${simState.spin.tempC} °C</text>
+            <text x="260" y="225" fill="#78849e" font-size="11" text-anchor="middle" font-family="monospace">T_c = ${simState.spin.tempC} C</text>
           </svg>
         `;
       }
     }
 
-    // Initialize simulator
+    renderCatalog();
     renderControls();
     updateSimulation();
   </script>
