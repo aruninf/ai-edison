@@ -1,6 +1,6 @@
-# Master Vector Catalog (Vectors 01 to 79)
+# Master Vector Catalog (Vectors 01 to 80)
 
-This directory contains all 79 first-principles discovery vectors across 75 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
+This directory contains all 80 first-principles discovery vectors across 76 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
 
 ---
 
@@ -18,7 +18,7 @@ This directory contains all 79 first-principles discovery vectors across 75 doss
 
 ---
 
-## Complete Categorized Index (All 79 Vectors)
+## Complete Categorized Index (All 80 Vectors)
 
 ### I. Methodology, Computation & Adversarial Frameworks (Vectors 02, 03, 04, 05, 06, 11)
 | # | Title | Core Principle / Target | Status | Dossier |
@@ -95,7 +95,7 @@ This directory contains all 79 first-principles discovery vectors across 75 doss
 | 65 | Anharmonic Phonon-Rectified Solid-State Isotope Sieve | $15.85\ \mathrm{THz}$ drive separating $^6\mathrm{Li}/^7\mathrm{Li}$ ($\alpha \ge 6.55$) without mercury | Live (75%) | [65-anharmonic-phonon-rectified-isotope-sieve.md](./65-anharmonic-phonon-rectified-isotope-sieve.md) |
 | 66 | Supramolecular Desolvation Thermogalvanic Harvester | Host-guest desolvation amplifying Seebeck to $10.88\ \mathrm{mV/K}$ ($14.8\ \mathrm{W/m^2}$ at $3\ \mathrm{K}$) | Live (73%) | [66-supramolecular-desolvation-thermogalvanic-harvester.md](./66-supramolecular-desolvation-thermogalvanic-harvester.md) |
 
-### VI. Quantum Limits, Electrodynamics & Gravitation (Vectors 23, 42, 43, 46, 47)
+### VI. Quantum Limits, Electrodynamics & Gravitation (Vectors 23, 42, 43, 46, 47, 80)
 | # | Title | Core Principle / Target | Status | Dossier |
 | :--- | :--- | :--- | :--- | :--- |
 | 23 | Critical-Casimir Tunable Springs | Near-critical binary solvent Casimir forces for tunable micro-stiffness | Wounded (50%) | [23-critical-casimir-tunable-springs.md](./23-critical-casimir-tunable-springs.md) |
@@ -103,6 +103,7 @@ This directory contains all 79 first-principles discovery vectors across 75 doss
 | 43 | Static Magnetostatic Topological Anapole | Non-radiating toroidal current geometry confining intense internal magnetic fields | Live (75%) | [43-magnetostatic-topological-anapole.md](./43-magnetostatic-topological-anapole.md) |
 | 46 | Non-Hermitian Chiral Zero-Noise Resistor | $\mathcal{PT}$-symmetric chiral edge conductor routing Nyquist noise to an isolated sink | Live (65%) | [46-non-hermitian-zero-noise-resistor.md](./46-non-hermitian-zero-noise-resistor.md) |
 | 47 | Sub-Debye Topological Electrostatic Conduit | Chiral ferroelectric domain-wall solitons projecting fields $> 6\lambda_D$ in electrolytes | Live (70%) | [47-sub-debye-electrostatic-conduit.md](./47-sub-debye-electrostatic-conduit.md) |
+| 80 | Sub-Crossover Geometric Flashover-Quenching Lattice | $200\ \mathrm{nm}$ re-entrant dielectric overhang clamping SEEA hops $< 40\ \mathrm{eV}$ ($> 40\ \mathrm{MV/m}$ holdoff) | Live (76%) | [80-sub-crossover-flashover-quenching-lattice.md](./80-sub-crossover-flashover-quenching-lattice.md) |
 
 ### VII. Deep-Space Biology, Cellular Longevity & Non-Invasive Medicine (Vectors 44, 45, 48, 49, 50, 51, 52, 53, 55, 62, 67, 68, 70, 71, 72, 73, 74)
 | # | Title | Core Principle / Target | Status | Dossier |
