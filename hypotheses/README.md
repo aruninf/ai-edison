@@ -17,6 +17,7 @@ This directory stores all active, validated, and falsified experimental logs acr
 | **EXP-20261117-007** | Monolithic Topological Acoustic Soliton Flywheel | Vector 18 & 06 | Proposed | 2026-11-17 | [EXP-007 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md) |
 | **EXP-20261117-008** | Smectic Topological Hydrostatic Pressure Decoupler | Vector 19 & 06 | Virtual-Validated | 2026-11-17 | [EXP-008 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-008-smectic-hydrostatic-decoupler.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py) |
 | **EXP-20261117-009** | Cooperative Spin-State Solid-State Latent Heat Capacitor | Vector 20 & 06 | Virtual-Validated | 2026-11-17 | [EXP-009 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp009_dislocation_heat_sweep.py) |
+| **EXP-20261125-010** | Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice (TAVJ-DL) | Vector 77 & 06 | Virtual-Validated | 2026-11-25 | [EXP-010 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-010-thermo-acoustic-chf-lattice.md) & [10,000-Trial Sweep](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py) |
 
 ---
 

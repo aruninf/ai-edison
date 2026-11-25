@@ -91,7 +91,18 @@ For Claude Code, Cursor, Windsurf, or VS Code setups, read the step-by-step [Ins
 
 ## 4. Master Discovery Matrix & Research Dossiers
 
-The repository contains 72 fully formulated physical discovery dossiers deconstructed from first principles.
+The repository contains **77 first-principles physical discovery vectors** across 73 dossier files, organized into 8 domain categories. For the complete 77-row searchable table, quick-finder by problem, and status breakdown (`live` / `wounded` / `dead`), see the [Master Vector Catalog](directions/README.md).
+
+* **I. Methodology, Computation & Adversarial Frameworks (Vectors 02-06, 11):** [02](directions/02-material-based-computation.md), [03](directions/03-integrated-physical-machines.md), [04](directions/04-dissipative-thermodynamic-logic.md), [05](directions/05-monolithic-transduction-lattices.md), [06](directions/06-adversarial-physical-falsification.md), [11](directions/11-non-oscillatory-chrono-metamaterials.md)
+* **II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75)**
+* **III. Thermal Physics, Phase-Change & Phononic Engineering (Vectors 10, 20, 21, 25, 28, 31, 40, 57, 58, 64, 76, 77)**
+* **IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69)**
+* **V. Ambient Energy, Electrochemistry & Planetary Carbon/Nitrogen/H2 (Vectors 01, 07, 13, 14, 17, 33, 34, 39, 54, 59, 61, 63, 65, 66)**
+* **VI. Quantum Limits, Electrodynamics & Gravitation (Vectors 23, 42, 43, 46, 47)**
+* **VII. Deep-Space Biology, Cellular Longevity & Non-Invasive Medicine (Vectors 44, 45, 48-53, 55, 62, 67, 68, 70-74)**
+* **VIII. Documented Dead Hypotheses (Vectors 56, 60)**
+
+Selected highlights by domain:
 
 ### A. Deep-Space Living, Astrobiology & Cellular Longevity
 * **[Vector 68: Ambient Zwitterionic Hydration-Shell Biologic Preserver](file:///Users/arunkumar/Downloads/inf-research/directions/68-ambient-zwitterionic-hydration-shell-vaccine-preserver.md)**: Replaces volatile water with an artificial non-evaporating $0.278\ \mathrm{nm}$ zwitterionic oligopeptide scaffold that matches the exact hydrogen-bonding donor-acceptor spacing of bulk water. Vitrifies insulin and mRNA-lipid nanoparticles into an amorphous solid glass ($T_g = 98.5\ ^\circ\mathrm{C}$), completely arresting protein unfolding and molecular diffusion at $+50\ ^\circ\mathrm{C}$ for years without refrigeration, freezing, or vacuum freeze-dryers, targeting the $\$35\text{ billion/year}$ biopharma cold chain waste.
@@ -154,6 +165,9 @@ The repository contains 72 fully formulated physical discovery dossiers deconstr
 * **[Vector 64: Phonon-Polariton Ballistic Heat Shunt](file:///Users/arunkumar/Downloads/inf-research/directions/64-phonon-polariton-ballistic-heat-shunt.md)**: Overcomes the sub-micron ballistic phonon bottleneck in high-density 3D AI microprocessors ($q \ge 1,000\ \mathrm{W/cm^2}$) where hotspot diameter $D < \lambda_{MFP}$. By direct near-field coupling into the Reststrahlen band of an atomically thin isotopically pure polar semiconductor capping layer ($h-^{11}\mathrm{BN}$ or $SiC$), heat launches into Surface Phonon-Polaritons (SPhPs) traveling laterally at $v_g \approx 1.27 \times 10^6\ \mathrm{m/s}$ ($150\times$ faster than sound in silicon) over $L_{prop} \approx 7.0\ \mu\mathrm{m}$, bypassing Fourier diffusive scattering and slashing peak junction temperatures by over $45\%$.
 * **[Vector 69: Capillary Multi-Stage Latent-Heat Desalinator](file:///Users/arunkumar/Downloads/inf-research/directions/69-capillary-multistage-latent-heat-desalinator.md)**: Overturns the century-old assumption that solar distillation is capped at $3\ \mathrm{L/(m^2\cdot day)}$. By cascading latent heat through a 10-stage $22\ \mathrm{mm}$ capillary nanolaminate panel while using the $175\ \mathrm{kg/m^3}$ negative buoyancy difference of concentrated brine to autonomously flush salt downward without pumps, the device delivers $42.5\ \mathrm{liters/(m^2\cdot day)}$ of drinking water (TDS $< 15\ \mathrm{ppm}$) at $\$0.12/\mathrm{m^3}$ with zero electricity and $\$18/\mathrm{m^2}$ capital cost.
 * **[Vector 76: Chiral Phononic Flat-Band Thermal Super-Insulator](file:///Users/arunkumar/Downloads/inf-research/directions/76-chiral-phononic-flat-band-super-insulator.md)**: Bypasses the Cahill-Pohl minimum thermal conductivity limit by constructing a 3D chiral non-symmorphic skutterudite-cage lattice ($\mathrm{La_{0.8}Ce_{0.2}Fe_4Sb_{12}}$). Localized optical rattling modes ($1.45\ \mathrm{THz}$) hybridize with acoustic branches to flatten the phonon dispersion across the Brillouin zone ($v_g \le 4.2\ \mathrm{m/s}$), while closed $0.48\ \mathrm{nm}$ interstitial cages freeze gas conduction into the deep Knudsen limit ($\mathrm{Kn} \approx 142$). Delivers an effective thermal conductivity of $k_{\text{eff}} = 0.00062\ \mathrm{W/(m\cdot K)}$ ($42\times$ lower than still air, $24\times$ lower than silica aerogel) in open atmospheric air without vacuum envelopes, supporting $> 12\ \mathrm{MPa}$ compressive load.
+* **[Vector 77: Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice](file:///Users/arunkumar/Downloads/inf-research/directions/77-thermo-acoustic-vapor-jet-chf-lattice.md)**: Breaks the Kutateladze-Zuber pool-boiling Critical Heat Flux limit ($1.109\ \mathrm{MW/m^2}$) by using Clausius-Clapeyron chamber overpressure ($3.62\ \mathrm{kPa/K}$) to fire high-Weber-number vapor jets ($v_v \le 215.4\ \mathrm{m/s}$, $\mathrm{We}_{\text{jet}} \ge 8.0$) through vertical nozzles while lateral Tesla-diode arteries ($\mathrm{Di} \ge 2.5$) resupply liquid passively. Sustains $15.42\ \mathrm{MW/m^2}$ median CHF ($33.78\ \mathrm{MW/m^2}$ champion, $30.46\times$ KZ) with zero pumps.
+  * Experiment Specification: [EXP-20261125-010](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-010-thermo-acoustic-chf-lattice.md)
+  * Simulation Solver: [exp010_thermo_acoustic_chf_sweep.py](file:///Users/arunkumar/Downloads/inf-research/hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py)
 
 ### F. Non-Contact Intervention, Tissue Reconstruction & Resistance-Proof Surfaces
 * **[Vector 51: Coincidence-Gated Sub-Threshold Acoustic Ablation](file:///Users/arunkumar/Downloads/inf-research/directions/51-coincidence-gated-acoustic-ablation.md)**: Six coherent transducers at $2.0\text{ MPa}$ against a $2.2\text{ MPa}$ cavitation threshold, so only the $12.0\text{ MPa}$ overlap crosses it, giving a $2\text{ mm}$ lesion at $12\text{ cm}$ depth with $0.8\text{ K}$ off-target heating and no imaging resolution. Live but contested: the claimed $10^4$ volumetric selectivity needs a $13\text{ kPa}$ threshold step, and at a realistic $200\text{ kPa}$ step the geometry delivers $6.9 \times 10^{-3}$, so the corrected design point is $N = 7$ beams at $0.65\text{ MPa}$ with $w \le 100\text{ kPa}$. The falsification test measures the step width directly rather than confirming the mechanism.
@@ -189,6 +203,7 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | **EXP-20261117-007** | Monolithic Topological Acoustic Soliton Flywheel | Bearingless stationary kinetic storage ($1.55\text{ kJ/kg}$) via supersonic torsional solitons ($v \approx 4,820\text{ m/s}$) | Specification Protocol | [EXP-007 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-007-topological-soliton-flywheel.md) |
 | **EXP-20261117-008** | Smectic Topological Hydrostatic Pressure Decoupler | Saturate bottom pressure at $\le 6\text{ kPa}$ at $100\text{ m}$ depth (99.4% reduction) via helical anchoring | `python3 hypotheses/simulations/exp008_hydrostatic_decoupler_sweep.py 10000` | [EXP-008 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-008-smectic-hydrostatic-decoupler.md) |
 | **EXP-20261117-009** | Cooperative Spin-State Solid-State Latent Heat Capacitor | Dry all-solid latent heat ($351.6\text{ kJ/kg}$) via cooperative spin-crossover with zero liquid phase | `python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000` | [EXP-009 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md) |
+| **EXP-20261125-010** | Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice | Passive pool-boiling CHF up to $33.78\ \mathrm{MW/m^2}$ ($30.46\times$ Kutateladze-Zuber) with zero pumps | `python3 hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py` | [EXP-010 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-010-thermo-acoustic-chf-lattice.md) |
 
 ---
 
@@ -206,15 +221,11 @@ inf-research/
 ├── .zenodo.json                            (CERN Zenodo DOI minting configuration)
 ├── RESEARCH_PROTOCOL.md                    (Hardened uncensored discovery rules and locks)
 ├── METHODOLOGY.md                          (Scientific and computational protocols)
-├── directions/                             (49 Core discovery domain dossiers)
-│   ├── 01-environmental-gradient-machines.md through 20-dislocation-latent-heat-capacitors.md
-│   ├── 21-phonon-poiseuille-thermal-conduits.md through 43-magnetostatic-topological-anapole.md
-│   ├── 44-mitochondrial-sub-thz-synchronizer.md
-│   ├── 45-cosmic-ray-delta-electron-trap.md
-│   ├── 46-non-hermitian-zero-noise-resistor.md
-│   ├── 47-sub-debye-electrostatic-conduit.md
-│   ├── 48-topological-chromatin-unknotting-resonator.md
-│   └── 49-sub-femtosecond-radiolytic-cleavage-suppressor.md
+├── directions/                             (77 Discovery vectors across 73 dossier files + catalog)
+│   ├── README.md                           (Complete 77-vector categorized index & quick-finder)
+│   ├── 01-environmental-gradient-machines.md through 24-loss-gradient-vibration-concentrators.md
+│   ├── 25-29-second-divergent-pass.md      (Vectors 25-29 + 8 killed candidates)
+│   └── 30-quasicrystalline-superlubricity-interface.md through 77-thermo-acoustic-vapor-jet-chf-lattice.md
 ├── frameworks/                             (Evaluation rubrics and pipeline architecture)
 │   ├── virtual-experimentation-pipeline.md
 │   ├── first-principles-evaluation.md
@@ -223,7 +234,7 @@ inf-research/
 │   └── run_all_sweeps.ipynb
 └── hypotheses/                             (Virtual experiment runs and validation logs)
     ├── README.md                           (Active hypotheses registry)
-    ├── EXP-001 through EXP-009 dossiers
+    ├── EXP-001 through EXP-010 dossiers
     └── simulations/                        (Pure Python high-throughput multi-physics sweeps)
         ├── exp001_thermomagnetic_sweep.py
         ├── exp002_cavitation_sweep.py
@@ -231,7 +242,8 @@ inf-research/
         ├── exp004_water_generator_sweep.py
         ├── exp005_mineralization_sweep.py
         ├── exp008_hydrostatic_decoupler_sweep.py
-        └── exp009_dislocation_heat_sweep.py
+        ├── exp009_dislocation_heat_sweep.py
+        └── exp010_thermo_acoustic_chf_sweep.py
 ```
 
 ---
