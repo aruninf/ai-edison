@@ -91,12 +91,12 @@ For Claude Code, Cursor, Windsurf, or VS Code setups, read the step-by-step [Ins
 
 ## 4. Master Discovery Matrix & Research Dossiers
 
-The repository contains **81 first-principles physical discovery vectors** across 77 dossier files, organized into 8 domain categories. For the complete 81-row searchable table, quick-finder by problem, and status breakdown (`live` / `wounded` / `dead`), see the [Master Vector Catalog](directions/README.md).
+The repository contains **82 first-principles physical discovery vectors** across 78 dossier files, organized into 8 domain categories. For the complete 82-row searchable table, quick-finder by problem, and status breakdown (`live` / `wounded` / `dead`), see the [Master Vector Catalog](directions/README.md).
 
 * **I. Methodology, Computation & Adversarial Frameworks (Vectors 02-06, 11):** [02](directions/02-material-based-computation.md), [03](directions/03-integrated-physical-machines.md), [04](directions/04-dissipative-thermodynamic-logic.md), [05](directions/05-monolithic-transduction-lattices.md), [06](directions/06-adversarial-physical-falsification.md), [11](directions/11-non-oscillatory-chrono-metamaterials.md)
 * **II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75, 78, 79)**
 * **III. Thermal Physics, Phase-Change & Phononic Engineering (Vectors 10, 20, 21, 25, 28, 31, 40, 57, 58, 64, 76, 77)**
-* **IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69)**
+* **IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69, 82)**
 * **V. Ambient Energy, Electrochemistry & Planetary Carbon/Nitrogen/H2 (Vectors 01, 07, 13, 14, 17, 33, 34, 39, 54, 59, 61, 63, 65, 66)**
 * **VI. Quantum Limits, Electrodynamics & Gravitation (Vectors 23, 42, 43, 46, 47, 80, 81)**
 * **VII. Deep-Space Biology, Cellular Longevity & Non-Invasive Medicine (Vectors 44, 45, 48-53, 55, 62, 67, 68, 70-74)**

@@ -82,6 +82,7 @@ def check_strict_dashes(errors: List[str]) -> None:
         ROOT / "directions" / "79-diurnal-thermal-snap-anvil-dust-ejection.md",
         ROOT / "directions" / "80-sub-crossover-flashover-quenching-lattice.md",
         ROOT / "directions" / "81-ponderomotive-trajectory-flashover-ejector.md",
+        ROOT / "directions" / "82-cavitation-jet-reversing-titanium-metamaterial.md",
         ROOT / "hypotheses" / "EXP-20261125-010-thermo-acoustic-chf-lattice.md",
         ROOT / "hypotheses" / "EXP-20261125-011-acoustic-impedance-transformer.md",
         ROOT / "hypotheses" / "EXP-20261125-012-thermal-snap-dust-ejection.md",

@@ -1,6 +1,6 @@
-# Master Vector Catalog (Vectors 01 to 81)
+# Master Vector Catalog (Vectors 01 to 82)
 
-This directory contains all 81 first-principles discovery vectors across 77 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
+This directory contains all 82 first-principles discovery vectors across 78 dossier files (Vectors 25 to 29 are consolidated in [25-29-second-divergent-pass.md](./25-29-second-divergent-pass.md)).
 
 ---
 
@@ -18,7 +18,7 @@ This directory contains all 81 first-principles discovery vectors across 77 doss
 
 ---
 
-## Complete Categorized Index (All 81 Vectors)
+## Complete Categorized Index (All 82 Vectors)
 
 ### I. Methodology, Computation & Adversarial Frameworks (Vectors 02, 03, 04, 05, 06, 11)
 | # | Title | Core Principle / Target | Status | Dossier |
@@ -64,7 +64,7 @@ This directory contains all 81 first-principles discovery vectors across 77 doss
 | 76 | Chiral Phononic Flat-Band Thermal Super-Insulator | Bypasses Cahill-Pohl limit ($k_{\text{eff}} = 0.00062\ \mathrm{W/(m\cdot K)}$ in open air) | Live (74%) | [76-chiral-phononic-flat-band-super-insulator.md](./76-chiral-phononic-flat-band-super-insulator.md) |
 | 77 | Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice | Breaks Kutateladze-Zuber CHF ($15.42\ \mathrm{MW/m^2}$ median, $33.78\ \mathrm{MW/m^2}$ peak); EXP-010 | Virtual-Validated (71%) | [77-thermo-acoustic-vapor-jet-chf-lattice.md](./77-thermo-acoustic-vapor-jet-chf-lattice.md) |
 
-### IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69)
+### IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69, 82)
 | # | Title | Core Principle / Target | Status | Dossier |
 | :--- | :--- | :--- | :--- | :--- |
 | 15 | Toroidal Liquid-Bearing Surfaces | Recirculating trapped vortices cutting hydrodynamic skin-friction drag | Live | [15-toroidal-liquid-bearing-surfaces.md](./15-toroidal-liquid-bearing-surfaces.md) |
@@ -76,6 +76,7 @@ This directory contains all 81 first-principles discovery vectors across 77 doss
 | 38 | Non-Pascalian Hydrostatic Shear-Freezing Metamaterial | Confinement-induced anisotropic stress shielding in fluid-filled lattices | Live (70%) | [38-non-pascalian-shear-freezing.md](./38-non-pascalian-shear-freezing.md) |
 | 41 | Abiotic Flexoelectric Viscosity-Inversion Metamaterial | Strain-gradient electric fields lowering effective interfacial fluid viscosity | Live (70%) | [41-flexoelectric-viscosity-inversion.md](./41-flexoelectric-viscosity-inversion.md) |
 | 69 | Capillary Multi-Stage Latent-Heat Desalinator | 10-stage passive solar distiller ($42.5\ \mathrm{L/(m^2\cdot day)}$, zero electricity) | Live (82%) | [69-capillary-multistage-latent-heat-desalinator.md](./69-capillary-multistage-latent-heat-desalinator.md) |
+| 82 | Phase-Inverting Cavitation-Jet-Reversing Titanium Cladding | Rigid $10\ \mu\mathrm{m}$ Ti skin over $350\ \mu\mathrm{m}$ cavities ($R = -0.91$) reversing cavitation jets away from blades | Live (75%) | [82-cavitation-jet-reversing-titanium-metamaterial.md](./82-cavitation-jet-reversing-titanium-metamaterial.md) |
 
 ### V. Ambient Energy, Electrochemistry & Planetary Carbon/Nitrogen/H2 (Vectors 01, 07, 13, 14, 17, 33, 34, 39, 54, 59, 61, 63, 65, 66)
 | # | Title | Core Principle / Target | Status | Dossier |
