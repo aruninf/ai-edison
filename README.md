@@ -91,10 +91,10 @@ For Claude Code, Cursor, Windsurf, or VS Code setups, read the step-by-step [Ins
 
 ## 4. Master Discovery Matrix & Research Dossiers
 
-The repository contains **78 first-principles physical discovery vectors** across 74 dossier files, organized into 8 domain categories. For the complete 78-row searchable table, quick-finder by problem, and status breakdown (`live` / `wounded` / `dead`), see the [Master Vector Catalog](directions/README.md).
+The repository contains **79 first-principles physical discovery vectors** across 75 dossier files, organized into 8 domain categories. For the complete 79-row searchable table, quick-finder by problem, and status breakdown (`live` / `wounded` / `dead`), see the [Master Vector Catalog](directions/README.md).
 
 * **I. Methodology, Computation & Adversarial Frameworks (Vectors 02-06, 11):** [02](directions/02-material-based-computation.md), [03](directions/03-integrated-physical-machines.md), [04](directions/04-dissipative-thermodynamic-logic.md), [05](directions/05-monolithic-transduction-lattices.md), [06](directions/06-adversarial-physical-falsification.md), [11](directions/11-non-oscillatory-chrono-metamaterials.md)
-* **II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75, 78)**
+* **II. Non-Reciprocal, Anti-Fatigue & Metamaterial Mechanics (Vectors 08, 09, 12, 16, 18, 22, 24, 29, 30, 32, 37, 75, 78, 79)**
 * **III. Thermal Physics, Phase-Change & Phononic Engineering (Vectors 10, 20, 21, 25, 28, 31, 40, 57, 58, 64, 76, 77)**
 * **IV. Fluidics, Hydrostatics & Desalination / Drying (Vectors 15, 19, 26, 27, 35, 36, 38, 41, 69)**
 * **V. Ambient Energy, Electrochemistry & Planetary Carbon/Nitrogen/H2 (Vectors 01, 07, 13, 14, 17, 33, 34, 39, 54, 59, 61, 63, 65, 66)**
@@ -205,6 +205,7 @@ All virtual experimentation runs and falsification logs are documented under `hy
 | **EXP-20261117-009** | Cooperative Spin-State Solid-State Latent Heat Capacitor | Dry all-solid latent heat ($351.6\text{ kJ/kg}$) via cooperative spin-crossover with zero liquid phase | `python3 hypotheses/simulations/exp009_dislocation_heat_sweep.py 10000` | [EXP-009 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-009-dislocation-latent-heat-capacitor.md) |
 | **EXP-20261125-010** | Self-Synchronized Thermo-Acoustic Vapor-Jet Diode Lattice | Passive pool-boiling CHF up to $33.78\ \mathrm{MW/m^2}$ ($30.46\times$ Kutateladze-Zuber) with zero pumps | `python3 hypotheses/simulations/exp010_thermo_acoustic_chf_sweep.py` | [EXP-010 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-010-thermo-acoustic-chf-lattice.md) |
 | **EXP-20261125-011** | Sub-Wavelength Monolithic Acoustic-Mechanical Impedance Transformer | Broadband $2$ to $30\ \mathrm{kHz}$ water-air transmission ($89.63\%$ mean, $799.6\times$ bare) in $1.10\ \mathrm{mm}$ plate | `python3 hypotheses/simulations/exp011_acoustic_impedance_transformer_sweep.py` | [EXP-011 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-011-acoustic-impedance-transformer.md) |
+| **EXP-20261125-012** | Passive Diurnal-Thermal Snap-Anvil Dust-Ejection Lattice | Waterless, zero-power $466,796\,g$ median thermal-snap impulse ejecting dust down to $0.35\ \mu\mathrm{m}$ | `python3 hypotheses/simulations/exp012_thermal_snap_dust_ejection_sweep.py` | [EXP-012 Dossier](file:///Users/arunkumar/Downloads/inf-research/hypotheses/EXP-20261125-012-thermal-snap-dust-ejection.md) |
 
 ---
 
